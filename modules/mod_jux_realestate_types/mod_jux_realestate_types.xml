@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" method="upgrade">
+    <name>JUX Real Estate Types</name>
+    <author>JoomlaUX</author>
+    <creationDate>24 July 2015</creationDate>
+    <copyright>Copyright (C) 2012 - 2015 by JoomlaUX Solutions. All rights reserved.</copyright>
+    <authorEmail>admin@joomlaux.com</authorEmail>
+    <authorUrl>http://www.joomlaux.com</authorUrl>
+    <version>3.2.4</version>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <description>MOD_JUX_REAL_ESTATE_TYPES_DESC</description>
+    <files>
+        <filename module="mod_jux_realestate_types">mod_jux_realestate_types.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>mod_jux_realestate_types.xml</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+	<languages>
+        <language tag="en-GB">language/en-GB.mod_jux_realestate_types.ini</language>
+        <language tag="en-GB">language/en-GB.mod_jux_realestate_types.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field 
+                    name="orderby_sec" 
+                    type="list" 
+                    default="ordering" 
+                    label="MOD_JUX_REAL_ESTATE_TYPES_ORDER_BY"
+                    description="MOD_JUX_REAL_ESTATE_TYPES_ORDER_BY_DESC">
+                    <option value="alpha">Title Alphabetical</option>
+                    <option value="ralpha">Title Reverse-Alphabetical</option>
+                    <option value="order">Ordering</option>
+                    <option value="rorder">Reverse-Ordering</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="count_realties" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REAL_ESTATE_TYPES_COUNT_REALTIES"
+                    description="MOD_JUX_REAL_ESTATE_TYPES_COUNT_REALTIES_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    
+</extension>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_MY_MESSAGE">
+		<message>
+			<![CDATA[My Message Layout Description]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field
+				name="list_limit"
+				type="text" 
+				size="3"
+				default="8"
+				label="COM_JUX_REAL_ESTATE_MY_MESSAGE_LIST_LIMIT" 
+				description="COM_JUX_REAL_ESTATE_MY_MESSAGE_LIST_LIMIT" />
+		</fieldset>
+	</fields>
+</metadata>

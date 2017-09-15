@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+	<fieldset name="metadata">
+	    <field 
+		name="meta_keywords" 
+		type="textarea"
+		label="JFIELD_META_KEYWORDS_LABEL"
+		description="JFIELD_META_KEYWORDS_DESC" 
+		class="inputbox" 
+		rows="5" 
+		cols="40" />
+	    
+	    <field 
+		name="meta_description"
+		type="textarea" 
+		label="JFIELD_META_DESCRIPTION_LABEL"
+		description="JFIELD_META_DESCRIPTION_DESC" 
+		class="inputbox" 
+		rows="5"
+		cols="40" />
+	</fieldset>
+	
+	<fieldset 
+	    name="description" 
+	    addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+	>
+	    <field 
+		name="id" 
+		type="hidden" 
+		default="0" 
+		label="JGLOBAL_FIELD_ID_LABEL" 
+		description ="JGLOBAL_FIELD_ID_DESC" />
+	    
+	    <field 
+		name="title" 
+		type="text"
+		class="inputbox" 
+		size="50" 
+		label="COM_JUX_REAL_ESTATE_REALTY_TITLE" 
+		description="" 
+		required="true" />
+	    
+	    <field 
+		name="alias" 
+		type="text" 
+		class="inputbox"
+		size="50" 
+		label="JFIELD_ALIAS_LABEL" 
+		description="JFIELD_ALIAS_DESC" />
+	    
+	    <field 
+		name="ordering"
+		type="JUXOrdering" 
+		label="JFIELD_ORDERING_LABEL"
+		description="JFIELD_ORDERING_DESC" 
+		table="realties"
+		class="input-medium" />
+	    
+	    <field 
+		name="type_id"
+		type="JUXType"
+		class="inputbox"
+		size="1" 
+		label="COM_JUX_REAL_ESTATE_REALTY_SELECT_TYPE" 
+		description="" 
+		required="true" />
+	    
+	    <field 
+		name="price" 
+		type="text" 
+		class="inputbox"
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_PRICE" 
+		description="COM_JUX_REAL_ESTATE_PRICE_DESC"
+		required="true" />
+	    
+	    <field 
+		name="price2" 
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_ORIGINAL_PRICE" 
+		description="COM_JUX_REAL_ESTATE_ORIGINAL_PRICE_DESC" />
+	    
+	    <field
+		name="price_freq" 
+		type="text" 
+		class="inputbox"
+		size="20"
+		label="" 
+		description="" />
+	    
+	    <field 
+		name="call_for_price" 
+		type="list" 
+		class="inputbox" 
+		label="COM_JUX_REAL_ESTATE_REALTY_CALL_FOR_PRICE" 
+		description=""
+		filter="intval" 
+		size="1" 
+		default="0"
+	    >
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>
+	    
+	    <field 
+		name="agent_id" 
+		type="JUXAgent"
+		class="inputbox"
+		size="1"
+		label="COM_JUX_REAL_ESTATE_REALTY_AGENT" 
+		description="" 
+		required="true" />
+	    
+	    <field 
+		name="sub_desc" 
+		type="textarea"
+		class="inputbox textarea" 
+		rows="4" 
+		label="COM_JUX_REAL_ESTATE_REALTY_SUB_DESC"
+		description="COM_JUX_REAL_ESTATE_REALTY_SUB_DESC" />
+	    
+	    <field 
+		name="description" 
+		type="editor"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_REALTY_LABEL" 
+		description="COM_JUX_REAL_ESTATE_REALTY_DESC" 
+		filter="safehtml" 
+		buttons="true" 
+		hide="readmore,pagebreak" />
+	    
+	    <field 
+		name="preview_image" 
+		type="media" 
+		directory="jux_real_estate/previews" 
+		hide_none="1"
+		preview="flase" 
+		label="COM_JUX_REAL_ESTATE_REALTY_PREVIEW" />
+	    
+	    <field 
+		name="currency_id"
+		type="juxcurrency"
+		class="inputbox" 
+		label="COM_JUX_REAL_ESTATE_CURRENCY"
+		description="" />
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+	    <field 
+		name="cat_id" 
+		type="categoryedit" 
+		class="inputbox" 
+		size="1" 
+		label="COM_JUX_REAL_ESTATE_REALTY_CONTRACT" 
+		description="COM_JUX_REAL_ESTATE_REALTY_CONTRACT" 
+		required="true" />
+	</fieldset>
+	
+	<fieldset 
+	    name="location"
+	    addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+	>
+	    <field 
+		name="show_map" 
+		type="list" 
+		class="inputbox" 
+		label="COM_JUX_REAL_ESTATE_REALTY_SHOW_MAP"
+		description="COM_JUX_REAL_ESTATE_SHOW_MAP_DESC" 
+		filter="intval"
+		size="1" 
+		default="1"
+	    >
+		<option value="">JGLOBAL_USE_GLOBAL</option>
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>   
+		        
+	    <field 
+		name="locstate" 
+		type="JUXLocstate" 
+		class="inputbox" 
+		label="COM_JUX_REAL_ESTATE_REALTY_STATE"
+		description="" />
+		
+	    <field 
+		name="province" 
+		type="text" 
+		class="inputbox" 
+		size="50" 
+		label="COM_JUX_REAL_ESTATE_REALTY_PROVINCE"
+		description="" />
+		
+	    <field 
+		name="country_id" 
+		type="JUXCountry" 
+		class="inputbox" 
+		label="COM_JUX_REAL_ESTATE_REALTY_COUNTRY"
+		description="" />
+		
+	    <field
+		name="region" 
+		type="text"
+		class="inputbox"
+		size="50"
+		label="COM_JUX_REAL_ESTATE_REALTY_REGION"
+		description="" />
+		
+	    <field
+		name="county" 
+		type="text" 
+		class="inputbox"
+		size="50" 
+		label="COM_JUX_REAL_ESTATE_REALTY_COUNTY"
+		description="" />
+		
+	    <field
+		name="latitude" 
+		type="text" 
+		class="inputbox"
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_LATITUDE" 
+		description="" />
+		
+	    <field 
+		name="longitude" 
+		type="text"
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_LONGITUDE"
+		description="" />
+		
+	    <field 
+		name="map_address"
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_MAP_ADDRESS"
+		description="" />
+		
+	    <field 
+		name="address"
+		type="text"
+		class="inputbox"
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_ADDRESS" 
+		description="" 
+		required="true" />
+		
+	    <field 
+		name="mapstreet" 
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_NEW_STREET_ADDRESS" 
+		description="" />
+		
+	    <field 
+		name="google_map" 
+		type="juxgmap" 
+		description="COM_JUX_REAL_ESTATE_REALTY_GMAPS_DISABLED"
+		width="100%" 
+		height="300px;"
+		border="#ccc" />
+	</fieldset>        
+	<fieldset 
+	    name="details" 
+	    addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+	>
+	    <field 
+		name="beds" 
+		type="list"
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_BEDROOMS" 
+		description="" 
+	    >
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	    </field>
+		
+	    <field 
+		name="baths" 
+		type="list" 
+		class="inputbox"
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_BATHROOMS" 
+		description=""
+	    >
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	    </field>
+		
+	    <field
+		name="sqft" 
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_SQFT" 
+		description="" />
+		
+	    <field 
+		name="lotsize"
+		type="text"
+		class="inputbox"
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_LOT_SIZE"
+		description="" />
+		
+	    <field 
+		name="lot_acres"
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_LOT_ACRES"
+		description="" />
+		
+	    <field
+		name="lot_type" 
+		type="text"
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_LOT_TYPE"
+		description="" />
+		
+	    <field 
+		name="heat"
+		type="text"
+		class="inputbox"
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_HEAT" 
+		description="" />
+		
+	    <field 
+		name="cool"
+		type="text" 
+		class="inputbox"
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_COOL"
+		description="" />
+		
+	    <field 
+		name="fuel"
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_FUEL"
+		description="" />
+		
+	    <field 
+		name="garage_type"
+		type="text"
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_GARAGE_TYPE" 
+		description="" />
+		
+	    <field 
+		name="garage_size" 
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_GARAGE_SIZE" 
+		description="" />
+		
+	    <field
+		name="siding"
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_SIDING"
+		description="" />
+		
+	    <field 
+		name="roof"
+		type="text"
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_ROOF"
+		description="" />
+		
+	    <field 
+		name="reception"
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_RECEPTION" 
+		description="" />
+		
+	    <field 
+		name="tax" 
+		type="text" 
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_TAX" 
+		description="" />
+		
+	    <field 
+		name="income" 
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_INCOME" 
+		description="" />
+		
+	    <!-- column two -->
+	    <field 
+		name="yearbuilt"
+		type="text" 
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_YEAR_BUILT" 
+		description="" />
+		
+	    <field
+		name="zoning" 
+		type="text"
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_ZONING"
+		description="" />
+		
+	    <field
+		name="propview" 
+		type="text"
+		class="inputbox" 
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_PROPVIEW" 
+		description="" />
+		
+	    <field 
+		name="school_district"
+		type="text" 
+		class="inputbox"
+		size="20" 
+		label="COM_JUX_REAL_ESTATE_REALTY_SCHOOL_DISTRICT"
+		description="" />
+		
+	    <field 
+		name="style"
+		type="text"
+		class="inputbox" 
+		size="20"
+		label="COM_JUX_REAL_ESTATE_REALTY_STYLE"
+		description="" />
+		
+	    <field 
+		name="frontage" 
+		type="list"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_REALTY_FRONTAGE" 
+		description="" 
+		default="0"
+	    >
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>
+		
+	    <field 
+		name="reo" 
+		type="list"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_REALTY_REO" 
+		description="" 
+		default="0"
+	    >
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>
+		
+	    <field 
+		name="hoa" 
+		type="list" 
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_REALTY_HOA"
+		description="" default="0"
+	    >
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>
+
+	    <field 
+		name="additions" 
+		type="juxfields" 
+		description="COM_JUX_REAL_ESTATE_REALTY_ADDITION_INFORMATION" />
+	</fieldset>
+	
+	<fieldset name="video">
+	    <field 
+		name="video" 
+		type="textarea" 
+		class="inputbox"
+		rows="10" 
+		cols="30" 
+		label="COM_JUX_REAL_ESTATE_REALTY_VIDEO" 
+		description="COM_JUX_REAL_ESTATE_VIDEO_DESC"  
+		filter="raw" />
+	</fieldset>
+	
+	<fieldset 
+	    name="amenities" 
+	    addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+	>
+	    <field 
+		name="general_amenity_header"
+		type="JUXheader"
+		default="COM_JUX_REAL_ESTATE_REALTY_GENERAL_AMENITIES"
+		bgcolor="#CD4747" />
+	    <field 
+		name="general_amenies"
+		type="JUXAmenityCheckboxes" 
+		class="inputbox"
+		label="" 
+		description="" 
+		category="0" />
+		
+	    <field
+		name="interior_amenity_header"
+		type="JUXheader" 
+		default="COM_JUX_REAL_ESTATE_REALTY_INTERIOR_AMENITIES" 
+		bgcolor="#CD4747" />
+		
+	    <field 
+		name="interior_amenies" 
+		type="JUXAmenityCheckboxes"
+		class="inputbox"
+		label="" 
+		description="" 
+		category="1" />
+		
+	    <field 
+		name="exterior_amenity_header" 
+		type="JUXheader" 
+		default="COM_JUX_REAL_ESTATE_REALTY_EXTERIOR_AMENITIES"
+		bgcolor="#CD4747" />
+		
+	    <field 
+		name="exterior_amenies"
+		type="JUXAmenityCheckboxes"
+		class="inputbox" 
+		label="" 
+		description="" 
+		category="2" />
+	</fieldset>
+
+	<fieldset name="right_panel">
+	    <field 
+		name="count" 
+		type="juxcount" 
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_REALTY_HITS"
+		description="" />
+		
+	    <field 
+		name="date_created" 
+		type="calendar"
+		label="JGLOBAL_FIELD_CREATED_LABEL"
+		description="JGLOBAL_FIELD_CREATED_DESC" 
+		class="inputbox"
+		size="22" 
+		format="%Y-%m-%d %H:%M:%S"
+		filter="user_utc" 
+		default="now" 
+		readonly="true" />
+		
+	    <field 
+		name="user_id"
+		type="user" 
+		label="JGLOBAL_FIELD_CREATED_BY_LABEL" 
+		description="JGLOBAL_FIELD_CREATED_BY_DESC" />
+		
+	    <field 
+		name="modified" 
+		type="calendar" 
+		class="readonly"
+		label="JGLOBAL_FIELD_MODIFIED_LABEL" 
+		description=""
+		size="22" 
+		readonly="true" 
+		format="%Y-%m-%d %H:%M:%S" 
+		filter="user_utc" />
+		
+	    <field 
+		name="modified_by" 
+		type="user" 
+		label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" 
+		class="readonly" 
+		readonly="true"
+		filter="unset" />
+		
+	    <field 
+		name="featured" 
+		type="list"
+		class="inputbox"
+		label="JFEATURED" 
+		description="" 
+		filter="intval"
+		size="1"
+		default="0"
+	    >
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	    </field>
+		
+	    <field 
+		name="approved"
+		type="list"
+		class="input-medium"
+		label="COM_JUX_REAL_ESTATE_APPROVED" 
+		description="" 
+		filter="intval"
+		size="1" 
+		default="1"
+	    >
+		<option value="1">COM_JUX_REAL_ESTATE_APPROVE</option>
+		<option value="0">COM_JUX_REAL_ESTATE_PENDING</option>
+		<option value="-1">COM_JUX_REAL_ESTATE_REJECT</option>
+	    </field>
+		
+	    <field 
+		name="sale" 
+		type="radio"
+		label="COM_JUX_REAL_ESTATE_SALE_STATUS"
+		class="btn-group"
+		filter="intval"
+		size="1" 
+		default="1"
+	    >
+		<option value="1">COM_JUX_REAL_ESTATE_SALE</option>
+		<option value="0">COM_JUX_REAL_ESTATE_SOLD</option>
+	    </field>
+		
+	    <!-- publishing -->
+	    <field 
+		name="language"
+		type="contentlanguage"
+		label="JFIELD_LANGUAGE_LABEL"
+		class="input-medium" 
+		size="1"
+	    >
+		<option value="*">JALL</option>
+	    </field>
+		
+	    <field 
+		name="access"
+		type="accesslevel" 
+		label="JFIELD_ACCESS_LABEL"
+		description="JFIELD_ACCESS_DESC" 
+		class="input-medium" 
+		size="1" />
+		
+	    <field
+		name="publish_up" 
+		type="calendar"
+		label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+		description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+		class="inputbox" 
+		size="22"
+		format="%Y-%m-%d %H:%M:%S" 
+		filter="user_utc" />
+		
+	    <field 
+		name="publish_down" 
+		type="calendar"
+		label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL" 
+		description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC" 
+		class="inputbox" 
+		size="22" 
+		format="%Y-%m-%d %H:%M:%S" 
+		filter="user_utc" />
+		
+	    <field 
+		name="published" 
+		type="list" 
+		class="input-medium"
+		label="JSTATUS" 
+		description="JFIELD_PUBLISHED_DESC"
+		filter="intval" 
+		size="1" 
+		default="1"
+	    >
+		<option value="1">JPUBLISHED</option>
+		<option value="0">JUNPUBLISHED</option>
+	    </field>
+		
+	    <!-- meta info -->
+	    <field 
+		name="keywords"
+		type="textarea"
+		class="inputbox"
+		size="40"
+		label="COM_JUX_REAL_ESTATE_REALTY_KEYWORDS" />
+		
+	    <field 
+		name="meta_keywords"
+		type="textarea" 
+		label="JFIELD_META_KEYWORDS_LABEL"
+		description="JFIELD_META_KEYWORDS_DESC" 
+		class="inputbox"
+		rows="3" 
+		cols="30" />
+		
+	    <field 
+		name="meta_desc" 
+		type="textarea" 
+		label="JFIELD_META_DESCRIPTION_LABEL"
+		description="JFIELD_META_DESCRIPTION_DESC"
+		class="inputbox" 
+		rows="3" 
+		cols="30" />
+	</fieldset>
+    </fields>
+
+</form>

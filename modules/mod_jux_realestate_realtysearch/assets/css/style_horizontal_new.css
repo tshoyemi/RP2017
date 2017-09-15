@@ -1,0 +1,203 @@
+#realty-search-horizontal {
+  margin-top: 30px;
+  width: 100%;
+}
+#realty-search-horizontal .well {
+  overflow: hidden;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form {
+  float: left;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form {
+    width: 100%;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form select.input-medium {
+  height: 40px;
+  width: 100%;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] {
+  width: 23%;
+  float: left;
+  margin: 0px 13px 20px 0px;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field]:nth-child(odd) {
+    margin-right: 6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field]:nth-child(even) {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 979px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] {
+    width: 100%;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 0px;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] #price_slider,
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] #area_slider {
+  margin-bottom: 7px;
+  height: 8px;
+  margin-top: 0px;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] .noUi-handle {
+  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  top: -7px;
+  left: -17px;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] .noUi-handle:before,
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] .noUi-handle:after {
+  content: none;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form [class$=-field] .noUi-handle-upper {
+  margin-left: -2px;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form .price-field .title,
+#realty-search-horizontal #ZJSearchForm .jux-search-form .area-field .title {
+  position: relative;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form .price-field .title .left-content,
+#realty-search-horizontal #ZJSearchForm .jux-search-form .area-field .title .left-content {
+  float: left;
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form .price-field .title .left-content,
+  #realty-search-horizontal #ZJSearchForm .jux-search-form .area-field .title .left-content {
+    font-size: 13px;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form .price-field .title .right-content,
+#realty-search-horizontal #ZJSearchForm .jux-search-form .area-field .title .right-content {
+  float: right;
+  position: absolute;
+  right: 0px;
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form .price-field .title .right-content,
+  #realty-search-horizontal #ZJSearchForm .jux-search-form .area-field .title .right-content {
+    font-size: 13px;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form #advanced_search input {
+  width: 100%;
+  height: 40px;
+  margin-right: 6px;
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form #advanced_search select.input-medium {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .jux-search-form #advanced_search select.input-medium {
+    font-size: 13px;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .jux-search-form select.input {
+  width: 100%;
+  height: 40px;
+}
+#realty-search-horizontal #ZJSearchForm .advanced #advanced_btn,
+#realty-search-horizontal #ZJSearchForm .advanced #standard_btn {
+  color: #990000 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-align: right !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  float: right;
+}
+#realty-search-horizontal #ZJSearchForm .box-right {
+  width: 20%;
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  #realty-search-horizontal #ZJSearchForm .box-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .box-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #realty-search-horizontal #ZJSearchForm .box-right {
+    width: 100%;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .box-right .search-button {
+  margin-bottom: 10px;
+  float: right;
+  background: url("http://wp.nootheme.com/citilights/wp-content/themes/noo-citilights/assets/images/map-line.png") repeat-x scroll left bottom #ffffff;
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  position: relative;
+}
+#realty-search-horizontal #ZJSearchForm .box-right .search-button .btn {
+  width: 100%;
+  background-color: #f0e797;
+  color: #c1b547;
+  padding: 32px 0px 32px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 0px !important;
+  height: auto !important;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .box-right .search-button .btn {
+    font-size: 17px;
+  }
+}
+#realty-search-horizontal #ZJSearchForm .box-right .search-button .btn:hover {
+  background-color: #2D71B5;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  #realty-search-horizontal #ZJSearchForm .box-right .search-button .btn:hover {
+    font-size: 17px;
+  }
+}

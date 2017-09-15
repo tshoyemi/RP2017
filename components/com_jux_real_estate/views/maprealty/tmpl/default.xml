@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_MAP_REALTY">
+		<message>
+			    <![CDATA[Map Realty Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_MAP_REALTY</name>
+		<description>COM_JUX_REAL_ESTATE_MAP_REALTY</description>
+	</state>
+	<fields name="params" addfieldpath="/administrator/components/com_jux_real_estate/elements">
+		<fieldset name="basic">
+			<field 
+				class="btn-group" 
+				name="enable_sidebar"
+				type="radio" 
+				default="1"
+				label="COM_JUX_REAL_ESTATE_ENABLE_SIDEBAR"
+				description="COM_JUX_REAL_ESTATE_ENABLE_SIDEBAR"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				class="btn-group" 
+				name="enable_iconbar" 
+				type="radio"
+				default="1"
+				label="COM_JUX_REAL_ESTATE_ENABLE_ICONBAR" 
+				description="COM_JUX_REAL_ESTATE_ENABLE_ICONBAR"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="zoomlevel" 
+				type="text" 
+				size="3" 
+				default="13" 
+				label="COM_JUX_REAL_ESTATE_ZOOM_LEVEL"
+				description="COM_JUX_REAL_ESTATE_ZOOM_LEVEL" />
+			
+			<field 
+				name="map_height"
+				type="text" 
+				size="3"
+				default="400" 
+				label="COM_JUX_REAL_ESTATE_MAP_HEIGHT" 
+				description="COM_JUX_REAL_ESTATE_MAP_HEIGHT" />
+			
+			<field 
+				name="sidebar_height"
+				type="text" 
+				size="3" 
+				default="120" 
+				label="COM_JUX_REAL_ESTATE_SIDEBAR_HEIGHT" 
+				description="COM_JUX_REAL_ESTATE_SIDEBAR_HEIGHT" />
+			
+			<field
+				name="thumb_img_width"
+				type="text" 
+				size="3"
+				default="100" 
+				label="COM_JUX_REAL_ESTATE_THUMBNAIL_WIDTH"
+				description="COM_JUX_REAL_ESTATE_THUMBNAIL_WIDTH" />
+			
+			<field 
+				name="thumb_img_height"
+				type="text" 
+				size="3" 
+				default="100"
+				label="COM_JUX_REAL_ESTATE_THUMBNAIL_HEIGHT"
+				description="COM_JUX_REAL_ESTATE_THUMBNAIL_HEIGHT" />
+			
+			<field  
+				class="inputbox" 
+				name="typeid" 
+				type="type" 
+				default="0" 
+				size="1" 
+				multiple="true"
+				label="COM_JUX_REAL_ESTATE_TYPES" 
+				description="COM_JUX_REAL_ESTATE_TYPES" />
+			
+			<field
+				class="btn-group" 
+				name="show_desc"
+				type="radio" 
+				default="1" 
+				label="COM_JUX_REAL_ESTATE_SHOW_DESCRIPTION"
+				description="COM_JUX_REAL_ESTATE_SHOW_DESCRIPTION"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="max_desc"
+				type="text" 
+				size="3" 
+				default="150"
+				label="COM_JUX_REAL_ESTATE_MAX_DESCRIPTION" 
+				description="COM_JUX_REAL_ESTATE_MAX_DESCRIPTION" />
+			
+			<field
+				class="btn-group" 
+				name="bylocation" 
+				type="radio" 
+				default="1" 
+				label="COM_JUX_REAL_ESTATE_SHOW_MAP_BY_LOCATION" 
+				description="COM_JUX_REAL_ESTATE_SHOW_MAP_BY_LOCATION_DESC"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field 
+				name="location" 
+				type="location" 
+				default="0" 
+				label="COM_JUX_REAL_ESTATE_CERTAIN_AREA"
+				description="COM_JUX_REAL_ESTATE_CERTAIN_AREA_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

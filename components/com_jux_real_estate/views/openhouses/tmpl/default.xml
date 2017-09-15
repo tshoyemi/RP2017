@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="All Openhouses">
+        <message>
+            <![CDATA[All Openhouses]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="max_desc" type="text" size="3" default="100" label="Max desc" description="Max description charecter" />
+            <!--<field name="num_leading_openhouses" type="text" size="3" default="1" label="Number leading"-->
+            <!--descrption="PARAMLEADING"/>-->
+            <field name="num_intro_openhouses" type="text" size="3" default="4" label="Number intro"
+                   description="PARAMINTRO"/>
+            <!--<field name="num_columns" type="text" size="3" default="1" label="Columns" description="PARAMCOLUMNS"/>-->
+
+            <field name="show_pagination" type="list" default="2" label="Pagination"
+                   description="Show/Hide Pagination support">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+                <option value="2">Auto</option>
+            </field>
+            <field name="show_pagination_results" type="radio" default="1" label="Pagination Results"
+                   description="PARAM_PAGINATION_RESULTS">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</metadata>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+    <name>JUX Real Estate ouragents</name>
+    <creationDate>Sep 25, 2015</creationDate>
+    <author>joomlaux</author>
+    <authorEmail>admin@joomlaux.com</authorEmail>
+    <authorUrl>http://www.joomlaux.com</authorUrl>
+    <copyright>Copyright 2015 JoomlaUX Solutions. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0.1</version>
+    <description>This module is a part of JUX Real Estate ouragents component, to show realty in your location</description>
+    <files>
+        <filename module="mod_jux_real_estate_ouragents">mod_jux_real_estate_ouragents.php</filename>
+        <folder>includes</folder>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>elements</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_jux_real_estate_ouragents.xml</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_jux_real_estate_ouragents.ini</language>
+        <language tag="en-GB">en-GB.mod_jux_real_estate_ouragents.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_jux_real_estate_ouragents/elements">
+            <fieldset name="basic">			
+                <field 
+                    name="count"
+                    type="text"
+                    default="5"
+                    label="MOD_JUX_REALESTATE_AGENTS_FIELD_COUNT_LABEL"
+                    description="MOD_JUX_REALESTATE_AGENTS_FIELD_COUNT_DESC"/>		
+
+                <field
+                    name="count_limit"
+                    type="text"
+                    default="5"
+                    label="MOD_JUX_REALESTATE_AGENTS_FIELD_COUNT_LIMIT_LABEL"
+                    description="MOD_JUX_REALESTATE_AGENTS_FIELD_COUNT_LIMIT_DESC">
+						
+                </field>	
+
+                <field 
+                    name="max_desc" 
+                    type="text" 
+                    size="3" 
+                    default="200" 
+                    label="MOD_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS"
+                    description="MOD_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS" />							
+
+            </fieldset>	
+            <fieldset name="item_style">
+
+                <field 
+                    name="show_title" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_AGENT_FIELD_SHOW_TITLE_LABEL" 
+                    description="MOD_JUX_REALESTATE_AGENT_FIELD_SHOW_TITLE_DESC">
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="linked_title">JYES</option>
+                </field>
+
+                <field 
+                    name="linked_title" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_OURAGENTS_FIELD_LINKED_TITLE_LABEL" 
+                    description="MOD_REAL_ESTATE_OURAGENTS_FIELD_LINKED_TITLE_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field 
+                    name="show_image" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_IMAGE_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_IMAGE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1" sub_fields="linked_image">JYES</option>
+                </field>
+
+                <field 
+                    name="linked_image" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_LINKED_IMAGE_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_LINKED_IMAGE_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field 
+                    name="show_des" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_DESCRIPTION_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_DESCRIPTION_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field 
+                    name="show_icon" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_ICON_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_ICON_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>      
+            <fieldset name="display_options">
+                <field
+                    name="thumbnail_mode"
+                    type="juxradio"
+                    default="none"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_DESC">
+                    <option value="none" sub_fields="">JNO</option>
+                    <option value="resize" sub_fields="use_ratio">MOD_JUX_REAL_ESTATE_RESIZE</option>
+                    <option value="crop" sub_fields="use_ratio">MOD_JUX_REAL_ESTATE_CROP</option>
+                </field>
+                <field
+                    name="use_ratio"
+                    type="radio"
+                    default="1"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_USE_RATIO_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_USE_RATIO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="image_width"
+                    type="text"
+                    default="100"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_DESC" />
+                <field
+                    name="image_height"
+                    type="text"
+                    default="100"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_DESC" />
+                <field name="jux_margin" type="juxgroup" label="JUX_REAL_ESTATE_OURAGENTS_MARGIN" description="JUX_REAL_ESTATE_OURAGENTS_MARGIN_DESC">
+                    <text name="margin-top" default="0px">Margin Top</text>
+                    <text name="margin-right" default="0px">Margin Right</text>
+                    <text name="margin-bottom" default="0px">Margin Bottom</text>
+                    <text name="margin-left" default="0px">Margin Left</text>
+                </field>
+                <field
+                    name="autoplay"
+                    type="juxradio"
+                    class="btn-group"
+                    default="0"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_AUTOPLAY_LABEL"
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_AUTOPLAY_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1" sub_fields="animation_speed">JYES</option>
+                </field>
+                <field 
+                    name ="animation_speed" 
+                    type ="text" 
+                    default ="500" 
+                    filter ="integer"
+                    label ="MOD_JUX_REALESTATE_SLIDER_FIELD_ANIMATION_SPEED_LABEL" 
+                    description ="MOD_JUX_REALESTATE_SLIDER_FIELD_ANIMATION_SPEED_DESC">
+                </field>
+                <field 
+                    name="stop0nHover" 
+                    type="radio" 
+                    default="0"  
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_OURAGENTS_FIELD_STOPONHOVER_LABEL" description="MOD_JUX_REAL_ESTATE_OURAGENTS_FIELD_STOPONHOVER_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>          
+
+            <fieldset name="advanced">
+                <field
+                    rows="7"
+                    name="custom_css"
+                    type="textarea"
+                    default=""
+                    label="MOD_REAL_ESTATE_OURAGENTS_FIELD_CUSTOM_CSS_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_OURAGENTS_FIELD_CUSTOM_CSS_DESC" />
+
+                <field
+                    name="enable_jquery"
+                    type="radio"
+                    default="0"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_OURAGENTS_ENABLE_JQUERY_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_OURAGENTS_ENABLE_JQUERY_DESC"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>	
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field 
+                    name="cache_time" 
+                    type="text" 
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" 
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="static">
+                    <option value="static"></option>
+                </field>
+
+                <field
+                    name="juxtime"
+                    type="juxchecktime" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

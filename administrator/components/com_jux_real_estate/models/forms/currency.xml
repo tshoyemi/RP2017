@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+	<field 
+		name="id" 
+		type="hidden" />
+	
+	<field
+		name="title"
+		type="text"
+		size="30"
+		maxlength="100"
+		label="COM_JUX_REAL_ESTATE_CURRENCY_TITLE"
+		required="true" />
+
+	<field 
+		name="published" 
+		type="radio" 
+		label="JSTATUS" 
+		class="inputbox"
+		filter="intval" 
+		size="1" 
+		default="1" 
+	>
+		<option value="1"> JPUBLISHED </option>
+		<option value="0"> JUNPUBLISHED </option>
+	</field>
+
+	<field
+		name="code"
+		type="text"
+		size="10"
+		maxlength="20"
+		label="COM_JUX_REAL_ESTATE_CURRENCY_CODE" />
+
+	<field
+		name="sign"
+		type="text"
+		size="10"
+		maxlength="20"
+		label="COM_JUX_REAL_ESTATE_CURRENCY_SIGN" />
+
+	<field 
+		name="position" 
+		type="radio" 
+		label="COM_JUX_REAL_ESTATE_CURRENCY_POSITION" 
+		class="btn-group"
+		filter="intval"
+		size="1" 
+		default="0"
+	>
+		<option value="0"> COM_JUX_REAL_ESTATE_CURRENCY_POSITION_LEFT </option>
+		<option value="1"> COM_JUX_REAL_ESTATE_CURRENCY_POSITION_RIGHT </option>
+	</field>
+
+	<field 
+		name="ordering" 
+		type="JUXOrdering" 
+		label="JFIELD_ORDERING_LABEL"
+		description="JFIELD_ORDERING_DESC"
+		table="currencies" 
+		class="inputbox" 
+		size="1" />
+
+	<field 
+		name="description" 
+		type="editor"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_CURRENCY_DESCRIPTION"
+		filter="JComponentHelper::filterText"
+		buttons="true"
+		hide="pagebreak, readmore" 
+		width="100%"
+		height="400" 
+		cols="50" 
+		rows="20" />
+    </fieldset>
+</form>

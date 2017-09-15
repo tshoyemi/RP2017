@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_FORM_SUBMIT_REALTY">
+		<message>
+			<![CDATA[List Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_FORM_SUBMIT_REALTY</name>
+		<description>SCOM_JUX_REAL_ESTATE_FORM_SUBMIT_REALTY_DESCRIPTION</description>
+	</state>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_ADD_AN_AGENTPLAN">
+		<message>
+			COM_JUX_REAL_ESTATE_ADDAGENTPLAN_FORM
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_ADD_AN_AGENTPLAN</name>
+		<description>COM_JUX_REAL_ESTATE_ADDAGENTPLAN_FORM</description>
+	</state>
+</metadata>

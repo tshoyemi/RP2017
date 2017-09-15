@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+        <field
+            name="user_access"
+            type="list"
+            label="COM_JUX_REAL_ESTATE_WHO_CAN_POST_REALTY"
+            description="COM_JUX_REAL_ESTATE_WHO_CAN_POST_REALTY"
+            size="1"
+            default="2"
+            class="text_area"
+        >
+            <option value="0">COM_JUX_REAL_ESTATE_SELECT_A_GROUP</option>
+            <option value="1">COM_JUX_REAL_ESTATE_USERS_AND_GUEST</option>
+            <option value="2">COM_JUX_REAL_ESTATE_ALL_REGISTERED</option>
+            <option value="3">COM_JUX_REAL_ESTATE_AGENTS_ONLY</option>
+        </field> 
+	   
+        <field 
+            name="auto_approve" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_AUTO_APPROVE"
+            description="COM_JUX_REAL_ESTATE_AUTO_APPROVE"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+	
+        <field 
+            name="social_share" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_SHOW_SOCIAL_SHARE"
+            description="COM_JUX_REAL_ESTATE_SHOW_SOCIAL_SHARE"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+	
+        <field  name="accept_term" 
+                type="radio"
+                label="COM_JUX_REAL_ESTATE_ACCEPT_TERM_FOR_POST_REALTY"
+                description="COM_JUX_REAL_ESTATE_ACCEPT_TERM_FOR_POST_REALTY"
+                class="btn-group" 
+                default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+	
+        <field 
+            required="true" 
+            name="article_id"
+            type="JUXArticle"
+            label="COM_JUX_REAL_ESTATE_TERM_AND_CONDITION_ARTICLE"
+            description="COM_JUX_REAL_ESTATE_TERM_AND_CONDITION_ARTICLE"
+            size="1" />
+	
+        <field
+            name="date_format"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_DATE_FORMAT"
+            description="COM_JUX_REAL_ESTATE_DATE_FORMAT"
+            size="70"
+            default="Y-m-d"
+            class="text_area" />
+	
+        <field
+            name="item_per_page"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_ITEMS_PER_PAGE"
+            description="COM_JUX_REAL_ESTATE_ITEMS_PER_PAGE"
+            size="70"
+            default="8"
+            class="text_area" />      
+    </fieldset>
+    <fieldset>
+        <field 
+            name="enable_map" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_GOOGLE_MAPS"
+            description="COM_JUX_REAL_ESTATE_GOOGLE_MAPS"
+            class="btn-group" default="1"
+        >
+            <option value="0">JOFF</option>
+            <option value="1">JON</option>
+        </field>
+        
+        <field
+            name="gmapapikey"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_GOOGLE_MAP_API_KEY"
+            description="COM_JUX_REAL_ESTATE_GOOGLE_MAP_API_KEY"
+            size="70"
+            default=""
+            class="text_area" />
+    </fieldset>
+    
+    <!--Genaral configuration-->
+    <field 
+        name="measurement_units" 
+        type="radio" 
+        class="btn-group" 
+        label="COM_JUX_REAL_ESTATE_MEASUREMENT_TYPE"
+        description="COM_JUX_REAL_ESTATE_MEASUREMENT_TYPE_DESC" 
+        filter="intval" 
+        size="1" 
+        default="0"
+    >
+        <option value="0">COM_JUX_REAL_ESTATE_SQFT</option>
+        <option value="1">COM_JUX_REAL_ESTATE_SQM</option>
+
+    </field>
+    <field name="comment_components" type="juxradio"
+           label="COM_JUX_REAL_ESTATE_COMMENT"
+           description="COM_JUX_REAL_ESTATE_COMMENT_DESC"
+           class="btn-group" default="0" size="1">
+        <option value="0">JFIELD_OPTION_NONE</option>
+        <option value="disqus" sub_fields="disqus_api,disqus_shortname,disqus_language">COM_JUX_REAL_ESTATE_CONFIGURATION_DISQUS</option>
+    </field>
+    <field
+        name="disqus_api"
+        type="text"
+        label="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_YOUR_DISQUS_API"
+        description="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_YOUR_DISQUS_API_DES"
+        size="25"
+        class="inputbox"/>
+    <field
+        name="disqus_shortname"
+        type="text"
+        label="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_YOUR_DISQUS_SUBDOMAIN"
+        description="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_YOUR_DISQUS_SUBDOMAIN_DES"
+        size="25"
+        class="inputbox"/>
+    <field
+        name="disqus_language" type="list"
+        label="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_SELECT_LANGUAGE_TO_USE"
+        description="COM_JUX_REAL_ESTATE_CONFIGURATIONUSER_DISQUS_SELECT_LANGUAGE_TO_USE_DES"
+        class="inputbox" default="" size="1">
+        <option value="">COM_JUX_REAL_ESTATE_DISQUS_SELECT_LANGUAGE</option>
+        <option value="ab">Abkhazian</option>
+        <option value="aa">Afar</option>
+        <option value="af">Afrikaans</option>
+        <option value="ak">Akan</option>
+        <option value="sq">Albanian</option>
+        <option value="am">Amharic</option>
+        <option value="ar">Arabic</option>
+        <option value="an">Aragonese</option>
+        <option value="hy">Armenian</option>
+        <option value="as">Assamese</option>
+        <option value="av">Avaric</option>
+        <option value="ae">Avestan</option>
+        <option value="ay">Aymara</option>
+        <option value="az">Azerbaijani</option>
+        <option value="bm">Bambara</option>
+        <option value="ba">Bashkir</option>
+        <option value="eu">Basque</option>
+        <option value="be">Belarusian</option>
+        <option value="bn">Bengali</option>
+        <option value="bh">Bihari languages</option>
+        <option value="bi">Bislama</option>
+        <option value="nb">Bokmål, Norwegian; Norwegian Bokmål</option>
+        <option value="bs">Bosnian</option>
+        <option value="br">Breton</option>
+        <option value="bg">Bulgarian</option>
+        <option value="my">Burmese</option>
+        <option value="my">Burmese</option>
+        <option value="ca">Catalan; Valencian</option>
+        <option value="km">Central Khmer</option>
+        <option value="ch">Chamorro</option>
+        <option value="ce">Chechen</option>
+        <option value="ny">Chichewa; Chewa; Nyanja</option>
+        <option value="zh">Chinese</option>
+        <option value="zh_HANT">Chinese (Traditional)</option>
+        <option value="cv">Chuvash</option>
+        <option value="kw">Cornish</option>
+        <option value="co">Corsican</option>
+        <option value="cr">Cree</option>
+        <option value="hr">Croatian</option>
+        <option value="cs">Czech</option>
+        <option value="da">Danish</option>
+        <option value="dv">Divehi; Dhivehi; Maldivian</option>
+        <option value="nl">Dutch; Flemish</option>
+        <option value="dz">Dzongkha</option>
+        <option value="en">English</option>
+        <option value="eo">Esperanto</option>
+        <option value="et">Estonian</option>
+        <option value="ee">Ewe</option>
+        <option value="fo">Faroese</option>
+        <option value="fj">Fijian</option>
+        <option value="fi">Finnish</option>
+        <option value="fr">French</option>
+        <option value="ff">Fulah</option>
+        <option value="gd">Gaelic; Scottish Gaelic</option>
+        <option value="gl">Galician</option>
+        <option value="lg">Ganda</option>
+        <option value="ka">Georgian</option>
+        <option value="de">German</option>
+        <option value="de_formal">German (Formal)</option>
+        <option value="de_inf">German (Informal)</option>
+        <option value="el">Greek</option>
+        <option value="gn">Guarani</option>
+        <option value="gu">Gujarati</option>
+        <option value="ht">Haitian; Haitian Creole</option>
+        <option value="ha">Hausa</option>
+        <option value="he">Hebrew</option>
+        <option value="hz">Herero</option>
+        <option value="hi">Hindi</option>
+        <option value="ho">Hiri Motu</option>
+        <option value="hu">Hungarian</option>
+        <option value="is">Icelandic</option>
+        <option value="io">Ido</option>
+        <option value="ig">Igbo</option>
+        <option value="id">Indonesian</option>
+        <option value="ie">Interlingue; Occidental</option>
+        <option value="iu">Inuktitut</option>
+        <option value="ik">Inupiaq</option>
+        <option value="ga">Irish</option>
+        <option value="it">Italian</option>
+        <option value="jv">Javanese</option>
+        <option value="kl">Kalaallisut; Greenlandic</option>
+        <option value="kn">Kannada</option>
+        <option value="kr">Kanuri</option>
+        <option value="ks">Kashmiri</option>
+        <option value="kk">Kazakh</option>
+        <option value="ki">Kikuyu; Gikuyu</option>
+        <option value="rw">Kinyarwanda</option>
+        <option value="ky">Kirghiz; Kyrgyz</option>
+        <option value="kv">Komi</option>
+        <option value="kg">Kongo</option>
+        <option value="ko">Korean</option>
+        <option value="kj">Kuanyama; Kwanyama</option>
+        <option value="ku">Kurdish</option>
+        <option value="lo">Lao</option>
+        <option value="la">Latin</option>
+        <option value="lv">Latvian</option>
+        <option value="li">Limburgan; Limburger; Limburgish</option>
+        <option value="ln">Lingala</option>
+        <option value="lt">Lithuanian</option>
+        <option value="lu">Luba-Katanga</option>
+        <option value="lb">Luxembourgish; Letzeburgesch</option>
+        <option value="mk">Macedonian</option>
+        <option value="mg">Malagasy</option>
+        <option value="ms">Malay</option>
+        <option value="ml">Malayalam</option>
+        <option value="mt">Maltese</option>
+        <option value="gv">Manx</option>
+        <option value="mi">Maori</option>
+        <option value="mr">Marathi</option>
+        <option value="mh">Marshallese</option>
+        <option value="mn">Mongolian</option>
+        <option value="na">Nauru</option>
+        <option value="nv">Navajo; Navaho</option>
+        <option value="nd">Ndebele, North; North Ndebele</option>
+        <option value="nr">Ndebele, South; South Ndebele</option>
+        <option value="ng">Ndonga</option>
+        <option value="ne">Nepali</option>
+        <option value="se">Northern Sami</option>
+        <option value="no">Norwegian</option>
+        <option value="nn">Norwegian Nynorsk; Nynorsk, Norwegian</option>
+        <option value="oc">Occitan (post 1500)</option>
+        <option value="oj">Ojibwa</option>
+        <option value="or">Oriya</option>
+        <option value="om">Oromo</option>
+        <option value="os">Ossetian; Ossetic</option>
+        <option value="pi">Pali</option>
+        <option value="pa">Panjabi; Punjabi</option>
+        <option value="fa">Persian</option>
+        <option value="pl">Polish</option>
+        <option value="pt">Portuguese</option>
+        <option value="pt_BR">Portuguese (Brazil)</option>
+        <option value="pt_EU">Portuguese (European)</option>
+        <option value="ps">Pushto; Pashto</option>
+        <option value="qu">Quechua</option>
+        <option value="ro">Romanian; Moldavian; Moldovan</option>
+        <option value="rm">Romansh</option>
+        <option value="rn">Rundi</option>
+        <option value="ru">Russian</option>
+        <option value="sm">Samoan</option>
+        <option value="sg">Sango</option>
+        <option value="sa">Sanskrit</option>
+        <option value="sc">Sardinian</option>
+        <option value="sr">Serbian</option>
+        <option value="sr_CYRL">Serbian (Cyrillic)</option>
+        <option value="sr_LATIN">Serbian (Latin)</option>
+        <option value="sn">Shona</option>
+        <option value="ii">Sichuan Yi; Nuosu</option>
+        <option value="sd">Sindhi</option>
+        <option value="si">Sinhala; Sinhalese</option>
+        <option value="sk">Slovak</option>
+        <option value="sl">Slovenian</option>
+        <option value="so">Somali</option>
+        <option value="st">Sotho, Southern</option>
+        <option value="es">Spanish; Castilian</option>
+        <option value="es_AR">Spanish (Argentina)</option>
+        <option value="es_ES">Spanish (Spain)</option>
+        <option value="es_MX">Spanish (Mexico)</option>
+        <option value="su">Sundanese</option>
+        <option value="sw">Swahili</option>
+        <option value="ss">Swati</option>
+        <!--<option value="sv">Swedish</option>-->
+        <option value="sv_SE">Swedish</option>
+        <option value="tl">Tagalog</option>
+        <option value="ty">Tahitian</option>
+        <option value="tg">Tajik</option>
+        <option value="ta">Tamil</option>
+        <option value="tt">Tatar</option>
+        <option value="te">Telugu</option>
+        <option value="th">Thai</option>
+        <option value="bo">Tibetan</option>
+        <option value="ti">Tigrinya</option>
+        <option value="to">Tonga (Tonga Islands)</option>
+        <option value="ts">Tsonga</option>
+        <option value="tn">Tswana</option>
+        <option value="tr">Turkish</option>
+        <option value="tk">Turkmen</option>
+        <option value="tw">Twi</option>
+        <option value="ug">Uighur; Uyghur</option>
+        <option value="uk">Ukrainian</option>
+        <option value="ur">Urdu</option>
+        <option value="uz">Uzbek</option>
+        <option value="ve">Venda</option>
+        <option value="vi">Vietnamese</option>
+        <option value="vo">Volapük</option>
+        <option value="wa">Walloon</option>
+        <option value="cy">Welsh</option>
+        <option value="fy">Western Frisian</option>
+        <option value="wo">Wolof</option>
+        <option value="xh">Xhosa</option>
+        <option value="yi">Yiddish</option>
+        <option value="yo">Yoruba</option>
+        <option value="za">Zhuang; Chuang</option>
+        <option value="zu">Zulu</option>
+    </field>
+   
+    <field 
+        name="new_days" 
+        type="text" 
+        class="inputbox" 
+        size="5" 
+        label="COM_JUX_REAL_ESTATE_NEW_DAYS"
+        description="COM_JUX_REAL_ESTATE_NEW_DAYS_DESC" 
+        default="7" />
+    
+    <field 
+        name="updated_days" 
+        type="text" 
+        class="inputbox" 
+        size="5" 
+        label="COM_JUX_REAL_ESTATE_UPDATED_DAYS"
+        description="COM_JUX_REAL_ESTATE_UPDATED_DAYS_DESC" 
+        default="7" />   
+
+    <!-- AGENT CONFIGURATION -->
+    <fieldset name="agent_configs">
+        <field 
+            name="agents_layout" 
+            type="radio" 
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_AGENTS_LAYOUT"
+            description="COM_JUX_REAL_ESTATE_AGENTS_LAYOUT" 
+            size="1"
+            default="grid"
+        >
+            <option value="grid">COM_JUX_REAL_ESTATE_CONFIGS_GRID</option>
+            <option value="list">COM_JUX_REAL_ESTATE_CONFIGS_LIST</option>
+        </field>
+      
+        <field 
+            name="max_desc_agents" 
+            type="text" 
+            size="3"
+            default="50" 
+            label="COM_JUX_REAL_ESTATE_CONFIGS_MAX_DESC"
+            description="COM_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS" />
+	
+        <field 
+            name="agent_show_address" 
+            type="radio"
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_ADDRESS"
+            description=""
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agents_show_email"
+            type="radio"
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_EMAIL"
+            description="" 
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agents_show_phone"
+            type="radio"
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_PHONE"
+            description=""
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agents_show_fax" 
+            type="radio"
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_FAX"
+            description=""
+            filter="intval"
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agents_show_skype" 
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_SKYPE"
+            description="" 
+            filter="intval" 
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field
+            name="agents_show_social"
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_SOCIAL"
+            description=""
+            filter="intval" 
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field 
+            name="agentdetail_realties_layout" 
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_AGENT_REALTIES_LAYOUT"
+            description="COM_JUX_REAL_ESTATE_AGENT_REALTIES_LAYOUT"
+            size="1"
+            default="grid"
+        >
+            <option value="grid">COM_JUX_REAL_ESTATE_CONFIGS_GRID</option>
+            <option value="list">COM_JUX_REAL_ESTATE_CONFIGS_LIST</option>
+        </field>
+	
+        <field
+            name="agentdetail_contact_form"
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_AGENT_CONTACT_FORM"
+            description="COM_JUX_REAL_ESTATE_AGENT_CONTACT_FORM"
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field 
+            name="agentdetail_show_skype"
+            type="radio"
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_SKYPE"
+            description=""
+            filter="intval" 
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_address" 
+            type="radio" 
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_ADDRESS"
+            description=""
+            filter="intval" 
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_email" 
+            type="radio"
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_EMAIL"
+            description="" 
+            filter="intval" 
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_phone"
+            type="radio" 
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_PHONE"
+            description="" 
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_mobile" 
+            type="radio"
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_MOBILE"
+            description="" 
+            filter="intval"
+            size="1"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_fax" 
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_FAX" 
+            description=""
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_website" 
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_WEB"
+            description="" 
+            filter="intval"
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+            name="agentdetail_show_organization" 
+            type="radio" 
+            class="btn-group" 
+            label="COM_JUX_REAL_ESTATE_SHOW_AGENT_ORGANIZATION"
+            description=""
+            filter="intval" 
+            size="1" 
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+
+    <!-- REALTY CONFIGURATION -->
+    <fieldset 
+        name="realty_configs" 
+        addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+    >
+        <field 
+            name="realties_layout" 
+            type="radio" 
+            class="btn-group"
+            label="COM_JUX_REAL_ESTATE_REALTIES_LAYOUT"
+            description="COM_JUX_REAL_ESTATE_REALTIES_LAYOUT"
+            size="1" 
+            default="grid"
+        >
+            <option value="grid">COM_JUX_REAL_ESTATE_CONFIGS_GRID</option>
+            <option value="list">COM_JUX_REAL_ESTATE_CONFIGS_LIST</option>
+        </field>      
+        
+        <field 
+            name="max_desc"
+            type="text"
+            size="3"
+            default="0" 
+            label="COM_JUX_REAL_ESTATE_CONFIGS_MAX_DESC"
+            description="COM_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS" />
+    </fieldset>
+
+    <!-- Currency CONFIGS -->
+    <fieldset name="currency_configs">
+        <field
+            name="thousand_separator"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_THOUSAND_SEPARATOR"
+            description="COM_JUX_REAL_ESTATE_THOUSAND_SEPARATOR"
+            size="70"
+            default=","
+            class="text_area" />
+        <field
+            name="currency_digits"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_DIGITS"
+            description="COM_JUX_REAL_ESTATE_DIGITS"
+            size="70"
+            default="2"
+            class="text_area" />
+    </fieldset>
+
+    <fieldset>     
+        <field
+            name="imgs_per_row"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_NUMBER_OF_IMAGES_PER_ROW"
+            description="COM_JUX_REAL_ESTATE_NUMBER_OF_IMAGES_PER_ROW_DESC"
+            size="70"
+            default="2"
+            class="text_area" />
+        <field
+            name="images_zise"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_MAX_IMAGES_SIZE"
+            description="COM_JUX_REAL_ESTATE_MAX_IMAGES_SIZE"
+            size="70"
+            default="2000"
+            class="text_area" />
+        <field
+            name="image_exts"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_ALLOW_IMAGE_EXTENSIOSN"
+            description="COM_JUX_REAL_ESTATE_ALLOW_IMAGE_EXTENSIOSN"
+            size="70"
+            default="png|jpg|gif|jpeg"
+            class="text_area" />     
+    </fieldset>
+
+    <fieldset>
+        <field
+            name="store_email"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_STORE_EMAIL"
+            description="COM_JUX_REAL_ESTATE_STORE_EMAIL"
+            size="70"
+            default="email@domain.com"
+            class="text_area" />
+        <field
+            name="store_email_name"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_STORE_EMAIL_NAME"
+            description="COM_JUX_REAL_ESTATE_STORE_EMAIL_NAME"
+            size="70"
+            default="email@domain.com"
+            class="text_area" />
+        <field
+            name="notify_email"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_ADMIN_NOTIFY_EMAIL"
+            description="COM_JUX_REAL_ESTATE_ADMIN_NOTIFY_EMAIL"
+            size="70"
+            default="email@domain.com"
+            class="text_area" />
+    </fieldset>
+    <fieldset>
+        <field
+            name="new_property_inform" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_NEW_REALTY_INFORM"
+            description="COM_JUX_REAL_ESTATE_NEW_REALTY_INFORM"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field 
+            name="new_property_confirmation"
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_NEW_REALTY_CONFIRMATION"
+            description="COM_JUX_REAL_ESTATE_NEW_REALTY_CONFIRMATION"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field 
+            name="agent_approved"
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_AGENT_APPROVED"
+            description="COM_JUX_REAL_ESTATE_AGENT_APPROVED"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field 
+            name="agent_rejected" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_AGENT_REJECTED"
+            description="COM_JUX_REAL_ESTATE_AGENT_REJECTED"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="agent_send" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_AGENT_SEND_MAIL"
+            description="COM_JUX_REAL_ESTATE_AGENT_SEND_MAIL"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field 
+            name="user_send"
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_USER_SEND_MAIL"
+            description="COM_JUX_REAL_ESTATE_USER_SEND_MAIL"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+
+        <field
+            name="email_new_property_inform_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_new_property_inform_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_new_property_confirmation_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_new_property_confirmation_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_approved_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_approved_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_rejected_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_rejected_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_agent_to_user_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_agent_to_user_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_user_to_agent_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_user_to_agent_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+    </fieldset>
+
+    <fieldset>
+        <field 
+            name="notify_new_agent" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_NEW_AGENT_PLACED"
+            description="COM_JUX_REAL_ESTATE_NEW_AGENT_PLACED"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field 
+            name="notify_agent_actived"
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_AGENT_ACTIVED"
+            description="COM_JUX_REAL_ESTATE_AGENT_ACTIVED"
+            class="btn-group" 
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+
+    <fieldset>
+        <field
+            name="email_thanks_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_thanks_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_request_active_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_request_active_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_paylater_thanks_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_paylater_thanks_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+        <field
+            name="email_agent_actived_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_agent_actived_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+
+        <field
+            name="email_admin_agent_created_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_admin_agent_created_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+        <field
+            name="email_admin_agent_actived_subject"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            description="COM_JUX_REAL_ESTATE_EMAIL_SUBJECT"
+            size="70"
+            class="text_area" />
+
+        <field
+            name="email_admin_agent_actived_body"
+            type="textarea"
+            label="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            description="COM_JUX_REAL_ESTATE_EMAIL_BODY"
+            rows="8"
+            cols="70"
+            class="text_area" />
+    </fieldset>
+
+    <fieldset>
+        <field 
+            name="page_thanks_type" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_USER_URL"
+            description="COM_JUX_REAL_ESTATE_USER_URL"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="page_thanks_url"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_URL"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_URL"
+            size="195"
+            class="text_area" />
+
+        <field
+            name="page_thanks_title"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_TITLE"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_TITLE"
+            size="195"
+            class="text_area" />
+
+        <field
+            name="page_thanks_msg"
+            type="editor"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_CONTENT"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_CONTENT"
+            width="100%"
+            height="300"
+            cols="50"
+            rows="20"
+            buttons="yes"
+            hide="pagebreak,readmore" />
+
+        <field 
+            name="page_cancel_type" 
+            type="radio"
+            label="COM_JUX_REAL_ESTATE_USER_URL"
+            description="COM_JUX_REAL_ESTATE_USER_URL"
+            class="btn-group" 
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="page_cancel_url"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_URL"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_URL"
+            size="195"
+            class="text_area" />
+
+        <field
+            name="page_cancel_title"
+            type="text"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_TITLE"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_TITLE"
+            size="195"
+            class="text_area" />
+
+        <field
+            name="page_cancel_msg"
+            type="editor"
+            label="COM_JUX_REAL_ESTATE_MESSAGE_CONTENT"
+            description="COM_JUX_REAL_ESTATE_MESSAGE_CONTENT"
+            width="100%"
+            height="300"
+            cols="50"
+            rows="20"
+            buttons="yes"
+            hide="pagebreak,readmore" />
+    </fieldset>  
+    <!-- Recaptcha CONFIGURATION end -->
+    <fieldset
+        name="permissions"
+        label="JCONFIG_PERMISSIONS_LABEL"
+        description="JCONFIG_PERMISSIONS_DESC"
+    >
+
+        <field
+            name="rules"
+            type="rules"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            class="inputbox"
+            validate="rules"
+            filter="rules"
+            component="com_jux_real_estate"
+            section="component" />
+    </fieldset>
+     <field
+                name="thumbnail_mode"
+                type="juxradio"
+                default="none"
+                class="btn-group"
+                label="COM_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_DESC">
+                <option value="none" sub_fields="">JNO</option>
+                <option value="resize" sub_fields="use_ratio">COM_JUX_REAL_ESTATE_RESIZE</option>
+                <option value="crop" sub_fields="use_ratio">COM_JUX_REAL_ESTATE_CROP</option>
+            </field>
+            <field
+                name="use_ratio"
+                type="radio"
+                default="1"
+                class="btn-group"
+                label="COM_JUX_REAL_ESTATE_FIELD_USE_RATIO_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_USE_RATIO_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="image_width"
+                type="text"
+                default="100"
+                label="COM_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_DESC" />
+            <field
+                name="image_height"
+                type="text"
+                default="100"
+                label="COM_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_DESC" />
+				
+    
+     <field
+                name="enable_capcha"
+                type="radio"
+                class="btn-group"
+                default="0"
+                label="COM_JUX_REAL_ESTATE_ENABLE_CAPCHA"
+                description="COM_JUX_REAL_ESTATE_ENABLE_CAPCHA_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+				
+    </field>
+</form>

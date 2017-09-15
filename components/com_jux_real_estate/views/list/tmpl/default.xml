@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="Default layout">
+        <message>
+            JUX Real Estate - List Default Layout
+        </message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_jux_real_estate/elements">
+            <field name="typeid" type="JUXtype" default="0" label="Select Type" description="Select a realty type" />
+            <field name="catid" type="JUXcategory" default="0" label="Select Category" description="Select a realty category" />
+            <field name="featured_show" type="radio" class="btn-group" default="0" label="Show featured only" description="Enable show featured only">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <fieldset name="basic">
+            <!--<field name="num_leading_realties" type="text" size="3" default="2" label="Number leading" descrption="PARAMLEADING" />-->
+            <field name="num_intro_realties" type="text" size="3" default="4" label="Number intro" description="PARAMINTRO" />
+            <!--<field name="num_columns" type="text" size="3" default="2" label="Columns" description="PARAMCOLUMNS" />-->
+            <field name="max_desc_realty" type="text" size="3" default="100" label="Max desc of realty" description="Max description charecter" />
+            <field name="orderby_type" type="list" default="" label="Type Order" description="Order items by type">
+                <option value="">No, order by Primary Order only</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+                <option value="order">Ordering</option>
+                <option value="rorder">Odering Reverse</option>
+
+            </field>
+            <field name="orderby_category" type="list" default="" label="Category Order" description="Order items by category">
+                <option value="">No, order by Primary Order only</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+
+            </field>
+            <field name="orderby_pri" type="list" default="" label="Primary Order" description="Order that the items will be displayed in.">
+                <option value="date">Oldest first</option>
+                <option value="rdate">Most recent first</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+                <option value="order">Ordering</option>
+                <option value="rorder">Ordering Reverse</option>
+                <option value="price">Price (Low to Height)</option>
+                <option value="rprice">Price (Height to Low)</option>
+            </field>
+            <field name="show_pagination" type="list" default="2" label="Pagination" description="Show/Hide Pagination support">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+                <option value="2">Auto</option>
+            </field>
+            <field name="show_pagination_results" class="btn-group" type="radio" default="1" label="Pagination Results" description="PARAM_PAGINATION_RESULTS">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

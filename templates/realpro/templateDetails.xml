@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="template">
+	<name>RealPro</name>
+	<creationDate>2017-11-01</creationDate>
+	<author>HisRoyalWebness Oluwaxheun Odofa</author>
+	<authorEmail>network316[@]gmail[dot]com</authorEmail>
+	<authorUrl>http://twitter.com/HisRoyalWebness</authorUrl>
+	<copyright>HisRoyalWebness. 2017</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description>HisRoyalWebness for RealPro</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>fa</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>footer1</position>
+		<position>footer2</position>
+		<position>footer3</position>
+		<position>footer4</position>
+		<position>footer5</position>
+		<position>footer6</position>
+		<position>footer7</position>
+		<position>footer8</position>
+		<position>footer9</position>
+		<position>footer10</position>
+		<position>footer11</position>
+		<position>left-menu</position>
+		<position>logo-area</position>
+		<position>lower-content</position>
+		<position>main-searcher</position>
+		<position>right</position>
+		<position>right-menu</position>
+		<position>top-left</position>
+		<position>top-right</position>
+		<position>word-crumb</position>
+	</positions>
+</extension>

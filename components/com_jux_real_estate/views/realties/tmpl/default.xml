@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="List Realties">
+		<message>
+			Realties List Layout - You can choose Grid or List layout
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field 
+				name="type_id"
+				type="juxtype" 
+				default="0"
+				label="Select Type"
+				description="Select a realty type" />
+
+			<field 
+				name="cat_id"
+				type="category"
+				label="Select Contract"
+				extension="com_jux_real_estate"
+				description="Select a realty category"
+			>
+				<option value="all">COM_JUX_REAL_ESTATE_OPTION_CONTRACT_ALL_CONTRACT</option>
+			</field>
+			
+			<field 
+				name="list_style" 
+				type="juxradio"
+				default="list" 
+				class="btn-group"
+				label="List Style"
+				description="Choose the style for the list of products"
+			>
+				<option value="list" sub_fields="">List</option>
+				<option value="grid" sub_fields="params/grid_column">Grid</option>
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="params" addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+		<fieldset name="property_list" label="COM_JUX_REAL_ESTATE_OPTION_DISPLAY_REALTY_LIST">
+			<field 
+				name="featured_product"
+				type="list"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_LBL"
+			>
+				<option value="like_normal">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_NORMAL</option>
+				<option value="featured_first">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_FIRST</option>
+				<option value="only_featured">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_ONLY</option>
+				<option value="no_featured">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_NO</option>
+			</field>
+			
+			<field 
+				name="grid_column" 
+				type="list"
+				class="btn-group"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_GRID_COLUMNS_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_GRID_COLUMNS_LBL"
+			>
+				<option value="2">J2</option>
+				<option value="3">J3</option>
+				<option value="4">J4</option>
+			</field>
+			
+			<field 
+				name="display_num"
+				type="text" 
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_NUM_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_NUM_LBL" 
+				default="5" />
+			
+			<field 
+				name= "max_desc_realty" 
+				type="text"
+				size="250" 
+				default="150"
+				label="Max desc of Realty" 
+				description="Max description charecter" />
+
+			<field 
+				name="order_by" 
+				type="juxradio" 
+				default="" 
+				class="btn-group"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_LBL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="rdate" sub_fields="order_date">JGLOBAL_MOST_RECENT_FIRST</option>
+				<option value="date" sub_fields="order_date">JGLOBAL_OLDEST_FIRST</option>
+				<option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+				<option value="hits">JGLOBAL_MOST_HITS</option>
+				<option value="rhits">JGLOBAL_LEAST_HITS</option>
+				<option value="order">COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_ORDERING</option>
+			</field>
+			
+			<field 
+				name="order_date" 
+				type="list" 
+				default="" 
+				class="btn-group" 
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDERING_DATE_LBL" 
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDERING_DATE_LBL"
+			>
+				<option value="created">JGLOBAL_CREATED</option>
+				<option value="modified">JGLOBAL_MODIFIED</option>
+			</field>
+			
+			<field 
+				name="show_pagination" 
+				type="list" 
+				default="2"
+				label="Pagination" 
+				description="Show/Hide Pagination support"
+			>
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">Auto</option>
+			</field>
+			
+			<field 
+				name="show_pagination_results" 
+				class="btn-group" 
+				type="radio" 
+				default="1" 
+				label="Pagination Results" 
+				description="PARAM_PAGINATION_RESULTS"
+			>
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+                        
+                        	
+                        
+		</fieldset>
+	</fields>
+</metadata>

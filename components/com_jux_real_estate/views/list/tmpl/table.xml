@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Table Layout">
+		<message>
+            <![CDATA[Table Layout Description]]>
+		</message>
+	</layout>
+    <fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_jux_real_estate/elements">
+			<field name="typeid" type="JUXtype" default="0" label="Select Type" description="Select a realty type" />
+			<field name="catid" type="JUXcategory" default="0" label="Select Category" description="Select a realty category" />
+		</fieldset>
+	</fields>
+    <fields name="params">
+		<fieldset name="basic">
+			<field name="orderby_type" type="list" default="" label="Type Order" description="Order items by type">
+                <option value="">No, order by Primary Order only</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+                <option value="order">Ordering</option>
+                <option value="rorder">Odering Reverse</option>
+
+            </field>
+            <field name="orderby_category" type="list" default="" label="Category Order" description="Order items by category">
+                <option value="">No, order by Primary Order only</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+
+            </field>
+            <field name="orderby_pri" type="list" default="" label="Primary Order" description="Order that the items will be displayed in.">
+                <option value="date">Oldest first</option>
+                <option value="rdate">Most recent first</option>
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+                <option value="order">Ordering</option>
+                <option value="rorder">Ordering Reverse</option>
+                <option value="price">Price (Low to Height)</option>
+                <option value="rprice">Price (Height to Low)</option>
+            </field>
+            <field name="display_num" type="list" default="5" label="Num of Realties" description="Number of Items to display as links.">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="0">All</option>
+            </field>
+            <field name="show_pagination_limit" type="radio" class="btn-group" default="1" label="Pagination Limit" description="Show/Hide Pagination limit">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+
+			<field name="show_pagination" type="list" default="2" label="Pagination" description="Show/Hide Pagination support">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">Auto</option>
+			</field>
+			<field name="show_pagination_results" type="radio" class="btn-group" default="1" label="Pagination Results" description="PARAM_PAGINATION_RESULTS">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+		</fieldset>
+		
+	</fields>
+</metadata>

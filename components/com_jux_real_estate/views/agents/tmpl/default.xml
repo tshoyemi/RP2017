@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_ALL_AGENTS">
+		<message>
+			    <![CDATA[Agent List Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_ALL_AGENTS</name>
+		<description>COM_JUX_REAL_ESTATE_ALL_AGENTS</description>
+		<url>
+
+		</url>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field 
+				name="list_style" 
+				type="juxradio"
+				default="list" 
+				class="btn-group"
+				label="COM_JUX_REAL_ESTATE_LIST_STYLE"
+				description="COM_JUX_REAL_ESTATE_AGENT_CHOOSE_THE_STYLE_FOR_THE_LIST_OF_PRODUCTS"
+			>
+				<option value="list" sub_fields="">COM_JUX_REAL_ESTATE_AGENT_LIST</option>
+				<option value="grid" sub_fields="params/grid_column">COM_JUX_REAL_ESTATE_AGENT_GRID</option>
+			</field>
+		</fieldset>
+	</fields>
+    
+	<fields name="params" addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+		<fieldset name="property_list" label="COM_JUX_REAL_ESTATE_OPTION_DISPLAY_AGENTS_LIST">
+			<field 
+				name="featured_product"
+				type="list"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_LBL"
+			>
+				<option value="like_normal">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_NORMAL</option>
+				<option value="featured_first">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_FIRST</option>
+				<option value="only_featured">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_ONLY</option>
+				<option value="no_featured">COM_JUX_REAL_ESTATE_OPTION_REALTY_FEATURED_NO</option>
+			</field>
+			
+			<field 
+				name="display_num" 
+				type="text" 
+				label="COM_JUX_REAL_ESTATE_OPTION_AGENTS_NUM_LBL" 
+				description="COM_JUX_REAL_ESTATE_OPTION_AGENTS_NUM_LBL" 
+				default="0" />
+			
+			<field 
+				name="max_desc" 
+				type="text" 
+				size="3" 
+				default="100" 
+				label="COM_JUX_REAL_ESTATE_AGENT_MAX_DESC" 
+				description="COM_JUX_REAL_ESTATE_AGENT_MAX_DESCRIPTION_CHARACTER" />
+
+			<field 
+				name="order_by" 
+				type="juxradio" 
+				default="" 
+				class="btn-group"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_LBL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+				<option value="order">COM_JUX_REAL_ESTATE_OPTION_REALTY_LIST_ORDER_ORDERING</option>
+			</field> 
+			   
+			<field 
+				name="grid_column"
+				type="list" 
+				class="btn-group"
+				label="COM_JUX_REAL_ESTATE_OPTION_REALTY_GRID_COLUMNS_LBL"
+				description="COM_JUX_REAL_ESTATE_OPTION_REALTY_GRID_COLUMNS_LBL"
+			>
+				<option value="2">J2</option>
+				<option value="3">J3</option>
+				<option value="4">J4</option>
+			</field>
+			
+			<field 
+				name="show_pagination" 
+				type="list" 
+				default="2" 
+				label="COM_JUX_REAL_ESTATE_AGENT_PAGINATION" 
+				description="COM_JUX_REAL_ESTATE_AGENT_SHOW_HIDE_SUPPORT" 
+			>
+				<option value="0">COM_JUX_REAL_ESTATE_AGENT_HIDE</option>
+				<option value="1">COM_JUX_REAL_ESTATE_AGENT_SHOW</option>
+				<option value="2">COM_JUX_REAL_ESTATE_AGENT_AUTO</option>
+			</field>
+
+			<field 
+				name="show_pagination_results" 
+				class="btn-group" 
+				type="radio"
+				default="1"
+				label="COM_JUX_REAL_ESTATE_AGENT_PAGINATION_RESULTS" 
+				description="PARAM_PAGINATION_RESULTS"
+			>
+				<option value="0">COM_JUX_REAL_ESTATE_AGENT_HIDE</option>
+				<option value="1">COM_JUX_REAL_ESTATE_AGENT_SHOW</option>
+			</field>
+			<field
+                name="thumbnail_mode"
+                type="juxradio"
+                default="none"
+                class="btn-group"
+                label="COM_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_DESC">
+                <option value="none" sub_fields="">JNO</option>
+                <option value="resize" sub_fields="use_ratio">COM_JUX_REAL_ESTATE_RESIZE</option>
+                <option value="crop" sub_fields="use_ratio">COM_JUX_REAL_ESTATE_CROP</option>
+            </field>
+            <field
+                name="use_ratio"
+                type="radio"
+                default="1"
+                class="btn-group"
+                label="COM_JUX_REAL_ESTATE_FIELD_USE_RATIO_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_USE_RATIO_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="image_width"
+                type="text"
+                default="100"
+                label="COM_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_DESC" />
+            <field
+                name="image_height"
+                type="text"
+                default="100"
+                label="COM_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_LABEL"
+                description="COM_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

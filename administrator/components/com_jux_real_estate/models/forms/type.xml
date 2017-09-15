@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" addfieldpath="/administrator/components/com_jux_real_estate/models/fields"/>
+    <field 
+	    name="id" 
+	    type="text" 
+	    default="0" 
+	    label="JGLOBAL_FIELD_ID_LABEL"
+	    readonly="true" class="readonly"
+	    description="JGLOBAL_FIELD_ID_DESC" />
+
+    <field 
+	    name="title" 
+	    type="text" 
+	    class="inputbox"
+	    size="40"
+	    label="JGLOBAL_TITLE"
+	    description="COM_JUX_REAL_ESTATE_TYPE_FIELD_TITLE_DESC"
+	    required="true" />
+
+    <field 
+	    name="alias" 
+	    type="text"
+	    label="JFIELD_ALIAS_LABEL"
+	    description="JFIELD_ALIAS_DESC"
+	    class="inputbox" 
+	    size="40" 
+	    maxlength="255" />
+    
+    <field 
+	    name="aliastip"
+	    type="spacer"
+	    label="COM_JUX_REAL_ESTATE_TIP_ALIAS_LABEL" />
+
+    <field 
+	    name="icon"
+	    type="hidden"
+	    description="JGLOBAL_FIELD_ID_DESC" />
+
+    <field
+            name="ordering"
+            type="JUXOrdering"
+            label="JFIELD_ORDERING_LABEL"
+            description="JFIELD_ORDERING_DESC"
+            table="types"
+            class="input-medium" />
+
+    <field 
+	    name="published"
+	    type="list"
+	    label="JSTATUS"
+	    description="JFIELD_PUBLISHED_DESC"
+	    class="input-medium"
+	    filter="intval"
+	    size="1" 
+	    default="1"
+    >
+	    <option value="1"> JPUBLISHED </option>
+	    <option value="0"> JUNPUBLISHED </option>
+    </field>
+    
+    <field 
+	    name="show_banner" 
+	    type="list" 
+	    label="COM_JUX_REAL_ESTATE_SHOW_BANNER"
+	    description="COM_JUX_REAL_ESTATE_SHOW_BANNER" 
+	    class="inputbox"
+	    filter="intval" 
+	    size="1"
+	    default="1"
+    >
+	    <option value="1">JSHOW </option>
+	    <option value="0"> JHIDE </option>
+    </field>
+    
+    <field 
+	    name="banner_color" 
+	    type="text" 
+	    class="inputbox"
+	    size="40" 
+	    label="COM_JUX_REAL_ESTATE_BANNER_COLOR"
+	    description="COM_JUX_REAL_ESTATE_BANNER_COLOR" />
+
+    <field 
+	    name="banner_image"
+	    type="text" 
+	    class="inputbox"
+	    size="80" 
+	    label="COM_JUX_REAL_ESTATE_BANNER_IMAGE"
+	    description="COM_JUX_REAL_ESTATE_BANNER_IMAGE" />
+
+    <field
+	    name="access" 
+	    type="accesslevel"
+	    label="JFIELD_ACCESS_LABEL"
+	    description="JFIELD_ACCESS_DESC" 
+	    class="input-medium"
+	    size="1" />
+
+    <field 
+	    name="language" 
+	    type="contentlanguage"
+	    label="JFIELD_LANGUAGE_LABEL"
+	    description="COM_JUX_REAL_ESTATE_LANGUAGE_DESC"
+	    class="input-medium" 
+	    size="1"
+    >
+	    <option value="*">JALL</option>
+    </field>
+    
+    <field 
+	    name="description"
+	    type="editor" 
+	    buttons="true" 
+	    hide="pagebreak,readmore"
+	    class="inputbox"
+	    filter="JComponentHelper::filterText"
+	    label="JGLOBAL_DESCRIPTION" 
+	    description="COM_JUX_REAL_ESTATE_FIELD_DESCRIPTION_DESC" />
+</form>

@@ -1,0 +1,4 @@
+INSERT INTO `#__re_plans` (`id`, `name`, `description`, `image`, `price`, `currency_id`, `days`, `days_type`, `count_limit`, `date_created`, `published`, `featured`, `publish_up`, `publish_down`, `ordering`, `checked_out`, `checked_out_time`, `params`) VALUES
+(1, 'Standard Package', '<p>Standard Package </p>', 'images/jux_real_estate/agents/11057802_808777029192124_1817072391970792376_n.jpg', 59.00, 1, 180, 'day', 11, '2015-02-13 16:34:04', 1, 1, '2015-02-17 17:00:00', '2015-02-27 17:00:00', 1, 737, '2015-06-23 10:13:04', NULL),
+(2, 'Basic Package', '<p>Basic package</p>', '', 29.00, 1, 90, 'day', 6, '2015-03-07 09:40:20', 1, 0, '2015-03-12 17:00:00', '0000-00-00 00:00:00', 2, 0, '0000-00-00 00:00:00', NULL),
+(3, 'Premium Package', '<p>Premium Package</p>', '', 99.00, 1, 360, 'day', 0, '2015-03-17 06:17:11', 1, 0, '2015-03-16 17:00:00', '0000-00-00 00:00:00', 3, 0, '0000-00-00 00:00:00', NULL);

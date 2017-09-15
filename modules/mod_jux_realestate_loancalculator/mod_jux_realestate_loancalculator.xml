@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+	<name>JUX Real ESTATE Calculator</name>
+	<creationDate>24 July 2015</creationDate>
+	<author>joomlaux</author>
+	<authorEmail>admin@joomlaux.com</authorEmail>
+	<authorUrl>http://www.joomlaux.com</authorUrl>
+	<copyright>Copyright 2012 - 2015 JoomlaUX Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<version>3.2.4</version>
+	<description>The JUX Real Estate Loan Calculator module allows you to easily show a simple loan calculator on your site</description>
+	<files>
+		<filename module="mod_jux_realestate_loancalculator">mod_jux_realestate_loancalculator.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jux_realestate_loancalculator.xml</filename>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_jux_realestate_loancalculator.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="moduleclass_sfx" 
+					type="text" 
+					default="" 
+					label="Module Class Suffix" 
+					description="PARAMMODULECLASSSUFFIX" />				
+				<field 
+					name="cache" 
+					type="radio"
+					class="btn-group"
+					default="0" 
+					label="Enable Cache" 
+					description="Select whether to cache the content of this module">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

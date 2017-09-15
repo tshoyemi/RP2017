@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+	<name>JUX Real Estate Properties</name>
+	<creationDate>Sep 25, 2015</creationDate>
+	<author>joomlaux</author>
+	<authorEmail>admin@joomlaux.com</authorEmail>
+	<authorUrl>http://www.joomlaux.com</authorUrl>
+	<copyright>Copyright 2015 JoomlaUX Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<version>1.0.1</version>
+	<description>This module is a part of JUX Real Estate Properties component, to show realty in your location</description>
+	<files>
+		<filename module="mod_jux_real_estate_properties">mod_jux_real_estate_properties.php</filename>
+		<folder>includes</folder>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>elements</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jux_real_estate_properties.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jux_real_estate_properties.ini</language>
+		<language tag="en-GB">en-GB.mod_jux_real_estate_properties.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params"  addfieldpath="/modules/mod_jux_real_estate_properties/elements">
+			<fieldset name="basic">	
+				<field 
+                    name="layout_style" 
+                    type="juxradio" 
+                    class="btn-group" 
+                    default="fullwidth" 
+                    label="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_DISPLAY_TYPE_LABEL" 
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_DISPLAY_TYPE_LABEL" 
+                    >
+                    <option value="fullwidth" sub_fields="text_image,count,show_address,show_price,linked_image,show_des,show_readmore,show_area,show_beds,show_baths,show_garages,jux_margin,autoplay,stop0nHover">Full Width</option>
+                    <option value="sidebar">Sidebar</option>
+                </field>
+
+                <field 
+                    name="text_image" 
+                    type="juxradio" 
+                    class="btn-group" 
+                    default="imagein" 
+                    label="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_DISPLAY_LABEL" 
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_DISPLAY_DESC" 
+                    >
+                    <option value="imagein">In</option>
+                    <option value="imageon" sub_fields="show_des,show_readmore">Out</option>
+                </field>
+
+                <field 
+                    name="count" 
+                    type="list" 
+                    class="btn-group" 
+                    default="3" 
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_COUNT_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_COUNT_DESC"
+                    >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </field>	
+                <field 
+                    name="select_type" 
+                    type="JUXtype" 
+                    default="0" 
+                    label="Select Type" 
+                    description="Select a realty type" />
+
+                <field 
+                    name="select_contract"
+                    type="category"
+                    label="Select Contract"
+                    extension="com_jux_real_estate"
+                    description="Select a realty category"
+                    >
+                    <option value="all">-All Contract-</option>
+                </field>
+
+
+                <field
+                    name="sort_order_field"
+                    type="list"
+                    multiple="false"
+                    size="10"
+                    default=""
+                    label="MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_DESC" 
+                    >
+                    <option value="date">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_DATE</option>
+                    <option value="rdate">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_REVERSE_DATE</option>
+                    <option value="alpha">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_ALPHA</option>
+                    <option value="ralpha">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_REVERSE_ALPHA</option>
+                    <option value="hits">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_HITS</option>
+                    <option value="order">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_ORDER</option>
+                    <option value="modified">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_MODIFIED</option>
+                    <option value="publish_up">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_PUBLISH_UP</option>
+                    <option value="id">MOD_JUX_REAL_ESTATE_PROPERTIES_SORT_ORDER_FIELD_ID</option>
+                </field>
+
+                <field
+                    name="count_limit"
+                    type="text"
+                    default="5"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_COUNT_LIMIT_LABEL"
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_COUNT_LIMIT_DESC" />		
+
+                <field 
+                    name="max_desc" 
+                    type="text" 
+                    size="3" 
+                    default="200" 
+                    label="MOD_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS"
+                    description="MOD_JUX_REAL_ESTATE_MAX_DESCRIPTION_CHARECTERS"/>	
+            </fieldset>
+
+            <fieldset name="item_style">
+                <field 
+                    name="show_title" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_TITLE_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_TITLE_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="linked_title">JYES</option>
+                </field>
+
+                <field 
+                    name="show_price" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_PRICE_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_PRICE_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" >JYES</option>
+                </field>
+
+                <field 
+                    name="show_address" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_ADDRESS_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_ADDRESS_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" >JYES</option>
+                </field>
+
+                <field 
+                    name="show_des" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_DESCRIPTION_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_DESCRIPTION_DESC"
+                    >
+                    <option value="0" onclick="if($('jform_params_display_form').get('value') == 'folder_image') return false;" sub_fields="">JNO</option>
+                    <option value="1" onclick="if($('jform_params_display_form').get('value') == 'folder_image') return false;" sub_fields="description_max_chars">JYES</option>
+                </field>
+
+                <field 
+                    name="show_readmore" 
+                    type="juxradio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_READMORE_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_READMORE_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="readmore_text">JYES</option>
+                </field>
+
+                <field 
+                    name="show_area" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_AREA_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_AREA_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="">JYES</option>
+                </field>
+
+                <field 
+                    name="show_beds" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_BEDS_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_BADS_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="">JYES</option>
+                </field>
+
+                <field 
+                    name="show_baths" 
+                    type="radio" 
+                    default="1"  
+                    class="btn-group"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_BATHS_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_SHOW_BATHS_DESC"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="">JYES</option>
+                </field>
+            </fieldset>    
+
+            <fieldset name="display_options">
+                <field
+                    name="thumbnail_mode"
+                    type="juxradio"
+                    default="none"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_THUMBNAIL_MODE_DESC">
+                    <option value="none" sub_fields="">JNO</option>
+                    <option value="resize" sub_fields="use_ratio">MOD_JUX_REAL_ESTATE_RESIZE</option>
+                    <option value="crop" sub_fields="use_ratio">MOD_JUX_REAL_ESTATE_CROP</option>
+                </field>
+                <field
+                    name="use_ratio"
+                    type="radio"
+                    default="1"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_USE_RATIO_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_USE_RATIO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="image_width"
+                    type="text"
+                    default="100"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_WIDTH_DESC" />
+                <field
+                    name="image_height"
+                    type="text"
+                    default="100"
+                    label="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_FIELD_IMAGE_HEIGHT_DESC" />
+                <field 
+                    name="jux_margin" 
+                    type="juxgroup" 
+                    label="JUX_REAL_ESTATE_PROPERTIES_MARGIN" 
+                    description="JUX_REAL_ESTATE_PROPERTIES_MARGIN_DESC"
+                    >
+                    <text name="margin-top" default="0px">Margin Top</text>
+                    <text name="margin-right" default="0px">Margin Right</text>
+                    <text name="margin-bottom" default="0px">Margin Bottom</text>
+                    <text name="margin-left" default="0px">Margin Left</text>
+                </field>
+
+                <field
+                    name="autoplay"
+                    type="juxradio"
+                    class="btn-group"
+                    default="0"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_AUTOPLAY_LABEL"
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_AUTOPLAY_DESC"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1" sub_fields="animation_speed">JYES</option>
+                </field>
+
+                <field 
+                    name="animation_speed" 
+                    type="text" 
+                    default="500" 
+                    filter="integer"
+                    label="MOD_JUX_REALESTATE_SLIDER_FIELD_ANIMATION_SPEED_LABEL" 
+                    description="MOD_JUX_REALESTATE_SLIDER_FIELD_ANIMATION_SPEED_DESC" />
+
+                <field 
+                    name="stop0nHover" 
+                    type="radio" 
+                    default="0"  
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_STOPONHOVER_LABEL" 
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_STOPONHOVER_DESC"
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>          
+
+            <fieldset name="advanced">
+                <field
+                   name="layout"
+                   type="modulelayout"
+                   label="JFIELD_ALT_LAYOUT_LABEL"
+                   description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                    rows="7"
+                    name="custom_css"
+                    type="textarea"
+                    default=""
+                    label="MOD_REAL_ESTATE_PROPERTIES_FIELD_CUSTOM_CSS_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_FIELD_CUSTOM_CSS_DESC" />
+
+                <field
+                    name="enable_jquery"
+                    type="radio"
+                    default="0"
+                    class="btn-group"
+                    label="MOD_JUX_REAL_ESTATE_PROPERTIES_ENABLE_JQUERY_LABEL"
+                    description="MOD_JUX_REAL_ESTATE_PROPERTIES_ENABLE_JQUERY_DESC"
+                    >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC"
+                    >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field 
+                    name="cache_time" 
+                    type="text" 
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" 
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="static"
+                    >
+                    <option value="static"></option>
+                </field>
+
+                <field
+                    name="juxtime"
+                    type="juxchecktime" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

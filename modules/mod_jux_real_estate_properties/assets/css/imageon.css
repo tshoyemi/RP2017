@@ -1,0 +1,294 @@
+#owl-demo .owl-controls {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  text-align: center;
+  margin-top: -33px;
+}
+.mod-properties.realty-item.imageon {
+  background: #F9F9F9;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon {
+    height: 520px !important;
+  }
+}
+.mod-properties.realty-item.imageon .realty-image {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 50%;
+}
+@media screen and (max-width: 491px) {
+  .mod-properties.realty-item.imageon .realty-image {
+    height: 50%;
+  }
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .bannerleft {
+  position: absolute;
+  bottom: inherit;
+  left: 0;
+  z-index: 999 !important;
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .bannerright {
+  position: absolute;
+  bottom: inherit;
+  right: 0;
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .status {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 10px;
+  color: #fff;
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .status .type {
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+  padding: 6px 9px;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-image .thumb-holder .status .type {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .status .new {
+  float: left;
+  padding: 6px 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+  color: #FFFD00;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-image .thumb-holder .status .new {
+    font-size: 12px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .image {
+  height: 100%;
+  width: auto;
+}
+.mod-properties.realty-item.imageon .realty-image .thumb-holder .image img {
+  height: 100%;
+  width: 100%;
+}
+.mod-properties.realty-item.imageon .realty-wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-title a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #373737;
+  text-decoration: none;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-title a:hover {
+  color: #2D71B5;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-address {
+  color: #444;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-address i {
+  margin-right: 5px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-desc {
+  margin-bottom: 40px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail {
+  background: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  display: table;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div {
+  display: inline-block;
+  padding: 20px 5px;
+  width: 31.33%;
+}
+@media screen and (max-width: 366px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div {
+    padding: 10px 0px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.size {
+  border-right: 1px solid #e5e5e5;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.size span {
+  background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.size span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.size {
+    width: 37.33%;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.bedrooms {
+  border-right: 1px solid #e5e5e5;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.bedrooms span {
+  background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.bedrooms span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.bathrooms span {
+  background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-detail > div.bathrooms span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info > div {
+  padding: 0 26px;
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid #e5e5e5;
+  padding: 20px 15px;
+  background: #ececec;
+}
+@media screen and (max-width: 1199px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    padding: 14px 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price {
+    padding: 14px 15px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price .slashprice {
+  font-size: 11px;
+}
+@media screen and (max-width: 767px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price .slashprice {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-price .slashprice {
+    font-size: 8px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action {
+  padding: 0;
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 618px) and (max-width: 633px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action {
+    font-size: 13px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action a {
+  display: block;
+  color: #C1B547;
+  text-decoration: none;
+  background-color: #f0e797;
+  padding: 20px 15px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 366px) {
+  .mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action a {
+    padding: 14px 15px;
+    font-size: 10px;
+  }
+}
+.mod-properties.realty-item.imageon .realty-wrap .realty-summary .realty-info .realty-action a:hover {
+  color: #fff;
+  background-color: #2D71B5;
+}

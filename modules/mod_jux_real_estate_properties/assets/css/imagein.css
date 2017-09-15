@@ -1,0 +1,304 @@
+#owl-demo .owl-controls {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  text-align: center;
+  margin-top: -33px;
+}
+#owl-demo .owl-item .real_slider.imagein {
+  position: relative;
+  margin: 0px 5px;
+}
+#owl-demo .owl-item .real_slider.imagein:hover .overlay,
+#owl-demo .owl-item .real_slider.imagein:hover .real_slider.imagein:hover .additional_info {
+  bottom: 0px;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+#owl-demo .real_slider.imagein .overlay .property-detail,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.75)), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), #000000 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: table;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail {
+    font-size: 13px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .property-detail > div,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail > div {
+  width: 33.33%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px 4px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div {
+    padding: 0px 4px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div {
+    padding: 0px 4px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div {
+    padding: 0px 4px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .property-detail > div span,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail > div span {
+  display: inline-block;
+  padding-left: 32px;
+}
+#owl-demo .real_slider.imagein .overlay .property-detail > div.size span,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.size span {
+  background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div.size span,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.size span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .property-detail > div.bedrooms span,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.bedrooms span {
+  background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div.bedrooms span,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.bedrooms span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .property-detail > div.bathrooms span,
+#owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.bathrooms span {
+  background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .overlay .property-detail > div.bathrooms span,
+  #owl-demo .real_slider.imagein:hover .additional_info .property-detail > div.bathrooms span {
+    background-size: 20px 15px;
+    font-size: 12px;
+  }
+}
+#owl-demo .real_slider.imagein {
+  font-size: 13px;
+}
+#owl-demo .real_slider.imagein .tag.status {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  color: #fff;
+  left: 13px;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  z-index: 2;
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .tag.status {
+    font-size: 11px;
+  }
+}
+#owl-demo .real_slider.imagein .tag.status:after {
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 0;
+  border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+  content: "";
+  left: 0;
+  position: absolute;
+}
+#owl-demo .real_slider.imagein .tag.status .type {
+  padding: 6px 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+}
+@media screen and (max-width: 370px) {
+  #owl-demo .real_slider.imagein .tag.status .type {
+    font-size: 10px;
+  }
+}
+#owl-demo .real_slider.imagein .tag.status .new {
+  float: left;
+  padding: 6px 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+  color: #FFFD00;
+}
+@media screen and (max-width: 370px) {
+  #owl-demo .real_slider.imagein .tag.status .new {
+    padding: 6px 7px;
+    font-size: 10px;
+  }
+}
+#owl-demo .real_slider.imagein .real_image img {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .real_image img {
+    height: auto;
+  }
+}
+#owl-demo .real_slider.imagein .banners .bannerright {
+  position: absolute;
+  bottom: inherit;
+  right: 0;
+  z-index: 1;
+}
+#owl-demo .real_slider.imagein .banners .bannerleft {
+  position: absolute;
+  bottom: inherit;
+  left: 0;
+  z-index: 1;
+}
+#owl-demo .real_slider.imagein .overlay {
+  font-size: 13px;
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .overlay {
+    font-size: 12px;
+    bottom: -42px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay {
+    bottom: -39px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #owl-demo .real_slider.imagein .overlay {
+    bottom: -39px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .real_des {
+  padding: 5px 10px 15px 10px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .overlay .real_des {
+    padding: 5px 10px 5px 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay .real_des {
+    padding: 5px 10px 5px 10px;
+  }
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 {
+    line-height: 15px;
+    margin: 1px 0px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .real_des h3 a {
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+}
+#owl-demo .real_slider.imagein .overlay .real_des h3 a:hover {
+  color: #2D71B5;
+}
+@media screen and (min-width: 618px) and (max-width: 699px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #owl-demo .real_slider.imagein .overlay .real_des h3 a {
+    font-size: 14px;
+  }
+}
+#owl-demo .real_slider.imagein .overlay .real_des .real_price {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #1396e2;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+#owl-demo .real_slider.imagein .overlay .real_des .real_price .slashprice {
+  font-size: 11px;
+}
+#owl-demo .real_slider.imagein .overlay .real_des figure {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+#owl-demo .real_slider.imagein .overlay .real_des header {
+  float: left;
+  color: red;
+}
+@media screen and (max-width: 370px) {
+  #owl-demo .real_slider.imagein .overlay .real_des .real_address {
+    font-size: 10px;
+  }
+}

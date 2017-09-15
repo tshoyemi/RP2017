@@ -1,0 +1,259 @@
+#owl-demo{
+    .owl-controls{ 
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        text-align: center;
+        margin-top: -33px;
+    }
+}
+.mod-properties.realty-item.imageon {
+    @media screen and (max-width: 320px){
+	  height: 520px !important;
+    }
+    background: #F9F9F9;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    .realty-image {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 50%;
+        @media screen and (max-width: 491px) {
+            height: 50%;
+        }
+        .thumb-holder {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            .bannerleft {
+                position: absolute;
+                bottom: inherit;
+                left: 0;
+                z-index: 999 !important;
+            }
+            .bannerright {
+                position: absolute;
+                bottom: inherit;
+                right: 0;
+            }
+            .status {
+                position: absolute;
+                bottom: 10px;
+                margin-left: 10px;
+                color: #fff;
+                .type {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    float: left;
+                    padding: 6px 9px;
+		    @media screen and (max-width: 320px){   
+    			font-size: 12px;
+    			padding: 6px 4px;
+		    }
+                }
+                .new {
+                    float: left;
+                    padding: 6px 9px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    margin-left: 10px;
+                    color: #FFFD00;
+		    @media screen and (max-width: 320px){   
+			     font-size: 12px;
+		    }
+                }
+            }
+            .image {
+                height: 100%;
+                width: auto;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .realty-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        .realty-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            a {
+                font-size: 16px;
+                font-weight: bold;
+                color: #373737;
+                text-decoration: none;
+                &:hover {
+                    color: #2D71B5;
+                }
+            }
+        }
+        .realty-address {
+            i {
+                margin-right: 5px;
+            }
+            color: #444;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 11px;
+        }
+        .realty-desc {
+            margin-bottom: 40px;
+        }
+        .realty-summary {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            .realty-detail {
+                background: #f9f9f9;
+                border-top: 1px solid #e5e5e5;
+                border-bottom: 1px solid #e5e5e5;
+                display: table;
+                width: 100%;
+                font-size: 13px;
+                text-align: center;
+                > div {
+                    display: inline-block;
+		    @media screen and (max-width: 366px){   
+			vertical-align: middle;
+			text-align: center;
+			display: table-cell;
+		    }
+                    padding: 20px 5px;
+		    @media screen and (max-width: 320px){   
+			  padding: 10px 0px;
+		    }
+                    width: 31.33%;
+                }
+                > div.size {
+                    border-right: 1px solid #e5e5e5;
+                    span {
+                        background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+                        padding: 10px 5px 10px 30px;
+                        background-size: 25px 20px;
+			@media screen and (max-width: 320px){
+			    background-size: 20px 15px;
+			    font-size: 12px;
+			}
+                    }
+		    @media screen and (max-width: 320px){
+			width: 37.33%;
+		    }
+                }  
+                > div.bedrooms {
+                    border-right: 1px solid #e5e5e5;
+                    span {
+                        background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+                        padding: 10px 5px 10px 30px;
+                        background-size: 25px 20px;
+			@media screen and (max-width: 320px){
+			    background-size: 20px 15px;
+			    font-size: 12px;
+			}
+                    }
+		    @media screen and (max-width: 320px){
+			
+		    }
+                } 
+
+                > div.bathrooms span {
+                    background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+                    padding: 10px 5px 10px 30px;
+                    background-size: 25px 20px;
+		    @media screen and (max-width: 320px){
+			background-size: 20px 15px;
+			font-size: 12px;
+		    }
+                }
+            }
+            .realty-info {
+                > div {
+                    padding: 0 26px;
+                }
+                .realty-price {
+                    width: 50%;
+                    float: left;
+                    text-align: left;
+                    font-size: 14px;
+                     @media screen and (max-width: 1199px) {
+                         font-size: 14px;
+                    }
+		    @media screen and (max-width: 767px) {
+			font-size: 13px; 
+		    }
+		    @media screen and (max-width: 480px){
+			font-size: 13px;
+		    } 
+		    @media screen and (max-width: 366px){
+			font-size: 11px;
+		    } 
+		    font-weight: bold;
+		    border-right: 1px solid #e5e5e5;
+		    padding: 20px 15px;
+		    @media screen and (max-width: 366px){
+			padding: 14px 15px;
+		    }
+		    @media screen and (max-width: 320px){
+			     padding: 14px 15px;
+		    }
+		    background: #ececec;
+        		   
+                    .slashprice {
+			font-size: 11px;
+                        @media screen and (max-width: 767px) {
+			    font-size: 10px; 
+			} 
+                        @media screen and (max-width: 366px) {
+			    font-size: 8px; 
+			} 
+                    }
+                }
+                .realty-action {
+                    padding: 0;
+                    width: 50%;
+                    float: left;
+                    width: 50%;
+                    float: left;
+                    font-size: 14px;
+		    font-weight: bold;
+		    text-align: center;
+		    text-transform: uppercase;
+                    @media screen and (max-width: 1199px) {
+			font-size: 14px;        
+		    }
+		    @media screen and (max-width: 767px) {
+			font-size: 13px; 
+		    } 
+		    @media screen and (min-width: 618px) and (max-width: 633px){
+			font-size: 12px; 
+		    }
+                    @media screen and (max-width: 480px) {
+			font-size: 13px;        
+                    }
+		    a {
+			display: block;
+			color: #C1B547;
+			text-decoration: none;
+			background-color: #f0e797;
+			padding: 20px 15px;
+			@media screen and (max-width: 366px){
+			    padding: 14px 15px;
+			    font-size: 10px;
+			}
+			-webkit-transition: all .25s ease-in-out;
+			-moz-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+			&:hover {
+			    color: #fff;
+			    background-color: #2D71B5;
+			}
+                    }
+                }
+            }
+        }
+    }
+}

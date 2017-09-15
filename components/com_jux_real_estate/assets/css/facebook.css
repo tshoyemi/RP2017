@@ -1,0 +1,39 @@
+@media (min-width: 950px){
+    .fb_iframe_widget span{
+        width: 700px !important;
+    }
+}
+
+@media (max-width: 949px) and (min-width: 770px)  {
+    .fb_iframe_widget span{
+        width: 550px !important;
+    }
+
+}
+@media (max-width: 769px) and (min-width: 550px) {
+    .fb_iframe_widget span{
+        width: 500px !important;
+    }
+
+}
+
+@media (max-width: 549px) and (min-width: 480px) {
+    .fb_iframe_widget span{
+        width: 450px !important;
+    }
+
+}
+
+@media (max-width: 479px) and (min-width: 350px) {
+    .fb_iframe_widget span{
+        width: 350px !important;
+    }
+
+}
+
+@media (max-width: 340px){
+    .fb_iframe_widget span{
+        width: 220px !important;
+    }
+
+}

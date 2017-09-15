@@ -1,0 +1,96 @@
+.ouragents-body.clearfix {
+  margin-bottom: 42px !important;
+}
+#owl-demo .item {
+  margin: 5px;
+  border: 1px solid #d2cfcf;
+}
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#owl-demo .owl-controls {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  text-align: center;
+  margin-top: -33px;
+}
+.ouragents-body {
+  position: relative;
+  padding-bottom: 40px;
+  margin: 5px;
+  background: #f9f9f9;
+}
+.ouragents-body .ouragents-image img {
+  width: 100% ;
+}
+.ouragents-body .ouragents-des {
+  text-align: center;
+}
+.ouragents-body .ouragents-des .ouragents-title {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0 15px 0;
+}
+.ouragents-body .ouragents-des .ouragents-title a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ouragents-body .ouragents-des .ouragents-title a:hover {
+  color: #2D71B5;
+}
+.ouragents-body .ouragents-des .ouragent-escription {
+  padding: 0px 15px 45px 15px;
+}
+.ouragents-body .ouragents-des .ouragent-escription p {
+  line-height: 20px;
+}
+.ouragents-body .ouragents-des .ouragents-ion {
+  padding: 0px;
+  border-top: 1px solid #EDEDED;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.ouragents-body .ouragents-des .ouragents-ion ul {
+  margin: auto;
+  padding: 0px;
+  float: center;
+  display: table;
+}
+.ouragents-body .ouragents-des .ouragents-ion ul li {
+  line-height: 18px;
+  list-style: none;
+  float: left;
+  padding: 12px 5px;
+}
+.ouragents-body .ouragents-des .ouragents-ion ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  float: left;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #333;
+}
+.ouragents-body .ouragents-des .ouragents-ion ul li a:hover {
+  color: #fff;
+  background-color: #2D71B5;
+}
+.ouragents-body .ouragents-des .ouragents-ion ul li a i {
+  font-size: 17px;
+}

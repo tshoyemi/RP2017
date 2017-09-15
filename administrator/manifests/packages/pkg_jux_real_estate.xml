@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="3.0.0" method="upgrade">
+	<name>JUX Real Estate Package</name>	
+	<author>joomlaux.com</author>
+	<authorEmail>admin@joomlaux.com</authorEmail>
+	<copyright>Copyright (C)2015 by JoomlaUX Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+	<creationDate>25 Sep 2015</creationDate>
+	<packagename>jux_real_estate</packagename>
+	<version>3.2.5</version>
+	<url>http://www.joomlaux.com</url>
+	<packager>JoomlaUX JUX Package</packager>
+	<packagerurl>http://www.joomlaux.com</packagerurl>
+	
+	<!--<description>Jse Real Estate Component for Joomla, it allows you manager your realty easily</description>-->
+	<description>
+	<![CDATA[
+	<style type="text/css">
+				.js-installation {
+					text-align: left;
+				}
+				.mod-desc li{
+					margin-left:10px;
+					padding-left:12px;
+				}
+				.mod-desc p{
+					margin:15px 0;
+				}
+			</style>
+			<div class="js-installation">
+				<span style="color: #008000;"><strong>Jse Real Estate Component for Joomla 3.0. It is a powerfull extension for management realty and registration.</strong></span><br />
+				<p><img alt="Jse Real Estate" src="http://www.joomlaux.com/images/digitalstore/preview/real-estate-preview.png" /></p>
+				<div style='font-weight:normal'>
+					JUX Real Estate is a JOOMLA component designed to fit a multitude of real estate related needs. It includes contracts for sale, mortgage agreements and assignments and liens.
+					<p style="clear:both"><span style="color: #ff6600;"><strong>Important Instruction:</strong></span></p>
+						<ul>
+							<li>component/com_jux_real_estate 1.0.0 j3.0.zip: Jse Real Estate Pro core component. This is required.</li>
+							<li>plugins/plg_jspayment_paypal.zip, plg_jspayment_paylater.zip, plg_jspayment_2co.zip, plg_jspayment_moneybookers.zip: these are plugins support payment methods when users register events. These are essential plugins.</li>
+							<li>modules/ mod_jux_realestate_agentsearch, mod_jux_realestate_categories, mod_jux_realestate_maprealty, …: support displaying realty on your site in different styles and make your site become more lively and beautiful.</li>		
+						</ul>
+					<p>Please read our document for detailed step by step instructions. You can find our document in the downloaded package or get it <a target="_blank" href="http://wiki.joomlaux.com/JUX_Real_Estate">here.</a></p>
+					<p style="clear:both"><span style="color: #ff6600;"><strong>Brief features:</strong></span></p>
+					<ul>
+						<li>
+							User can register to become an agent & upload realty.
+						</li>
+						<li>
+							Admin can create as many companies as they want. Each company will have one company's admin. Company's admin can change the information of company.
+						</li>
+						<li>Manage realty from backend by administrator, from frontend by owner (agents).	
+						</li>
+						<li>Manage agents from backend by administrator.
+						</li>
+						<li>Add realty from backend by administrator, from frontend by agents in the frontend with property types, categories, cities, states, countries...
+						</li>
+						<li>No limit in adding realty types, categories/sub-categories, realty, amenities, custom field groups and custom fields.
+						</li>
+						<li>Google map V3 and driving directions for each realty.
+						</li>
+						<li>Flexible frontend display: our component provides two layouts to display list of realties (Default vs. Table layout).
+						</li>
+						<li>Full Management In backend: administrator has full control of companies, agents, realty, plan, country, state from backend.
+						</li>
+						<li>Custom fields: for a specific realty. The custom field feature allows administrator to define custom fields and creators can use those fields as they desire. JUX Real Estate can help you create many types of fields: Textbox, Text area, Dropdown (single and multiple select lists), checkbox list, radio list, Date Time.
+						</li>
+						<li>Dynamic email template: you could setup email template with placeholders which will be filled with information when email is actually sent. The feature is available for all emails sent to donors, creators and administrator. And creator could create unique email template for each realty.
+						</li>
+						<li>Social Share buttons: Users can share realty with their friends via many social networks such as Facebook, Twitter...
+						</li>
+						<li>Flexible configuration options: There are many configuration options which can be changed from JUX Real Estate Backend. That makes JUX Real Estate become a flexible & easy to use extension.
+						</li>
+						<li>Responsive extension: with the support of JOOMLA 3.x and bootstrap, our JUX Real Estate is responsive. JUX Real Estate can display your site perfectly on all devices: PCs, tablet, or smartphone, ...
+						</li>						
+					</ul>
+					<ul>
+						<li><strong>Nice and professional frontend design with:</strong></p>
+							<ul>
+								<li>
+									2 distinct layouts for realties listing:
+									<ul>
+										<li>
+											Default - View the realties list with each realty in a line</li>
+										<li>
+											Table - View all realties in table form</li>
+									</ul>
+								</li>							
+								<li>
+									Showing realties by user's location.</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><strong> Feature-rich realty component:</strong>
+							<ul>
+								<li>
+									Provide Google Map with driving direction.</li>								
+								<li>
+									Social Network Sharing function.</li>							
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><strong>Flexible Realty management:</strong></p>
+							<ul>
+								<li>
+									Flexible in backend configuration.</li>
+								<li>
+									Support submitting/editing event from frontend</li>							
+								<li>
+									<strong><em>Support Multiple languages</em></strong></li>
+								<li>
+									Integrate Google ReCaptcha for submit realty forms for security.</li>
+							</ul>
+						</li>
+					</ul>
+				
+					<p><strong><span style="color: #ff0000;">Upgrade Method:</span><br /></strong></p>
+					<p>Jse Real Estate Pro version 2.0.0 was created and changed core database – so this is not a “update” version. When you install this version, you will install a totally new Jse Real Estate Pro. You don’t have to uninstall the Jse Real Estate version you’re using, but when you install this new version, it will work as a different component from the old version on your site. In short, installing Jse Real Estate Pro version 2.0.0 to your site which is running Jse Real Estate Pro’s older version is ok, but the two components will work separately as two different components.</p>
+
+					<p>Please take note of this so you can decide to use Jse Real Estate Pro version 2.0.0 correctly.
+					</p>
+					<p><span style="color: #008000;"><strong>Links:</strong></span></p>
+					<ul>
+						<li><a target="_blank" href="http://wiki.joomlaux.com/JUX_Real_Estate#User_Guide">Jse Real Estate Userguide</a></li>
+						<li><a target="_blank" href="http://extensions.joomla.org/extensions/vertical-markets/real-estate/16105">Vote for Jse Real Estate on JED!</a></li>
+						<li><a target="_blank" href="http://joomlaux.com/forum">Forums</a></li>
+						<li><a target="_blank" href="http://tickets.joomlaux.com">Submit Ticket</a></li>
+					</ul>
+					<p>Copyright 2008 - 2012 <a target="_blank" href="http://www.joomlaux.com/" title="Visit JoomlaUX.com!">JoomSeller.com</a>.</p>
+				</div>
+			</div>
+		]]>
+	</description>
+
+	<files folder="packages">
+		<file type="component" id="jux_real_estate">com_jux_real_estate.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_categories.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_maprealty.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_realtysearch.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_ouragents.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_slideshow.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_types.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_loancalculator.zip</file>
+		<file type="module"    id="jux_real_estate" client="site">mod_jux_real_estate_properties.zip</file>
+		<file type="plugin"    id="jux_real_estate">plugins_jux_real_estate_2co.zip</file>
+		<file type="plugin"    id="jux_real_estate">plugins_jux_real_estate_paypal.zip</file>
+	</files>
+</extension>

@@ -1,0 +1,284 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 26, 2014, 4:57:06 PM
+    Author     : NOO119
+    */
+#ZJSearchForm {
+  margin: 0px;
+}
+#ZJSearchForm select,
+#ZJSearchForm input {
+  width: 100%;
+  height: 40px !important;
+}
+#ZJSearchForm input[type="submit"] {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #C8C8C8;
+  box-shadow: 2px 2px 0px #C4C4C4;
+}
+#ZJSearchForm label {
+  display: block;
+}
+#ZJSearchForm #advanced_search .input-append {
+  width: 100%;
+  position: relative;
+}
+#ZJSearchForm #advanced_search .input-append .btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#ZJSearchForm #advanced_search select.input {
+  margin-bottom: 10px ;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  #ZJSearchForm #advanced_search select.input {
+    width: 100%;
+    margin-bottom: 0px !important;
+  }
+}
+#ZJSearchForm #advanced_search select.input-medium {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  #ZJSearchForm #advanced_search select.input-medium {
+    margin-bottom: 0px !important;
+  }
+}
+div#ezrTabContent {
+  overflow: hidden;
+}
+.jux-search-form [class$="-field"] {
+  width: 100%;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .jux-search-form [class$="-field"] {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .jux-search-form input[type="text"] {
+    margin-bottom: 0px !important;
+  }
+}
+.jux-search-form .keyword-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.jux-search-form .keyword-field input,
+.jux-search-form .keyword-field select {
+  height: 30px;
+}
+.jux-search-form .advanced {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.jux-search-form span#advanced_btn,
+.jux-search-form span#standard_btn {
+  color: #990000 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-align: right !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
+.jux-search-form span#advanced_btn {
+  display: block;
+  float: right;
+}
+.jux-search-form span#standard_btn {
+  display: none ;
+}
+.jux-search-form .type-field,
+.jux-search-form .contract-field,
+.jux-search-form .country-field,
+.jux-search-form .state-field,
+.jux-search-form .agent-field,
+.jux-search-form .beds-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .jux-search-form .type-field,
+  .jux-search-form .contract-field,
+  .jux-search-form .country-field,
+  .jux-search-form .state-field,
+  .jux-search-form .agent-field,
+  .jux-search-form .beds-field {
+    margin-top: 0px;
+  }
+}
+.jux-search-form .type-field input,
+.jux-search-form .contract-field input,
+.jux-search-form .country-field input,
+.jux-search-form .state-field input,
+.jux-search-form .agent-field input,
+.jux-search-form .beds-field input,
+.jux-search-form .type-field select,
+.jux-search-form .contract-field select,
+.jux-search-form .country-field select,
+.jux-search-form .state-field select,
+.jux-search-form .agent-field select,
+.jux-search-form .beds-field select {
+  height: 40px;
+}
+.jux-search-form .type-field .select-tag,
+.jux-search-form .contract-field .select-tag,
+.jux-search-form .country-field .select-tag,
+.jux-search-form .state-field .select-tag,
+.jux-search-form .agent-field .select-tag,
+.jux-search-form .beds-field .select-tag {
+  cursor: pointer;
+  padding: 10px 0 10px 2px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-left: 0px;
+}
+.jux-search-form .type-field .select-tag span,
+.jux-search-form .contract-field .select-tag span,
+.jux-search-form .country-field .select-tag span,
+.jux-search-form .state-field .select-tag span,
+.jux-search-form .agent-field .select-tag span,
+.jux-search-form .beds-field .select-tag span {
+  margin-left: 10px;
+}
+.jux-search-form .type-field .select-tag i,
+.jux-search-form .contract-field .select-tag i,
+.jux-search-form .country-field .select-tag i,
+.jux-search-form .state-field .select-tag i,
+.jux-search-form .agent-field .select-tag i,
+.jux-search-form .beds-field .select-tag i {
+  margin-right: 10px;
+  float: right;
+}
+.jux-search-form .type-field .select-type,
+.jux-search-form .contract-field .select-type,
+.jux-search-form .country-field .select-type,
+.jux-search-form .state-field .select-type,
+.jux-search-form .agent-field .select-type,
+.jux-search-form .beds-field .select-type {
+  display: none;
+  list-style-type: none;
+  margin-left: 0px;
+  background: white;
+  border: 1px solid #ddd;
+  position: absolute;
+  min-width: 170px;
+}
+.jux-search-form .type-field .select-type li,
+.jux-search-form .contract-field .select-type li,
+.jux-search-form .country-field .select-type li,
+.jux-search-form .state-field .select-type li,
+.jux-search-form .agent-field .select-type li,
+.jux-search-form .beds-field .select-type li {
+  padding-left: 10px;
+}
+.jux-search-form .type-field .select-type li:hover,
+.jux-search-form .contract-field .select-type li:hover,
+.jux-search-form .country-field .select-type li:hover,
+.jux-search-form .state-field .select-type li:hover,
+.jux-search-form .agent-field .select-type li:hover,
+.jux-search-form .beds-field .select-type li:hover {
+  background: #1d8bec;
+  color: white;
+  cursor: pointer;
+}
+.jux-search-form .price-field {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.jux-search-form .price-field .title .left-content {
+  float: left;
+  font-size: 16px;
+}
+.jux-search-form .price-field .title .right-content {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  white-space: nowrap;
+  width: 100%;
+}
+.jux-search-form .price-field #price_slider {
+  height: 7px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  background: #FFFFFF;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .jux-search-form .price-field #price_slider {
+    margin-top: 5px;
+  }
+}
+.jux-search-form .price-field #price_slider .noUi-handle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 0px;
+  top: -5px;
+}
+.jux-search-form .price-field #price_slider .noUi-handle:after,
+.jux-search-form .price-field #price_slider .noUi-handle:before {
+  content: none;
+}
+.jux-search-form .price-field #price_slider .noUi-handle.noUi-handle-upper {
+  left: -10px;
+}
+.jux-search-form .area-field {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .jux-search-form .area-field {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+.jux-search-form .area-field .title .left-content {
+  float: left;
+  font-size: 16px;
+}
+.jux-search-form .area-field .title .right-content {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  white-space: nowrap;
+  width: 100%;
+}
+.jux-search-form .area-field #area_slider {
+  height: 7px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 1px solid #DFDFDF;
+  background: #FFFFFF;
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .jux-search-form .area-field #area_slider {
+    margin-top: 5px;
+  }
+}
+.jux-search-form .area-field #area_slider .noUi-handle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 0px;
+  top: -5px;
+}
+.jux-search-form .area-field #area_slider .noUi-handle:after,
+.jux-search-form .area-field #area_slider .noUi-handle:before {
+  content: none;
+}
+.jux-search-form .area-field #area_slider .noUi-handle.noUi-handle-upper {
+  left: -10px;
+}

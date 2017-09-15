@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset addfieldpath="components/com_jux_real_estate/models/fields">
+                <field  
+                        name="id" 
+                        type="hidden" 
+                        default="0" />
+
+                <field  
+                        name="username" 
+                        type="text" 
+                        required="true" 
+                        size="60" 
+                        label="COM_JUX_REAL_ESTATE_AGENT_NAME" 
+                        description="COM_JUX_REAL_ESTATE_AGENT_NAME" 
+                        class="inputbox" />
+
+                <field  
+                        name="alias" 
+                        type="text" 
+                        label="JFIELD_ALIAS_LABEL"
+                        description="JFIELD_ALIAS_DESC" 
+                        class="inputbox" 
+                        size="30" 
+                        maxlength="255" />
+
+                <field  
+                        name="email" 
+                        type="text" 
+                        required="true" 
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_EMAIL" 
+                        description="COM_JUX_REAL_ESTATE_EMAIL"
+                        class="inputbox" />
+
+                <field  
+                        name="payment_method" 
+                        type="text" 
+                        class="inputbox"
+                        label="COM_JUX_REAL_ESTATE_PAYMENT_METHOD"
+                        description="COM_JUX_REAL_ESTATE_PAYMENT_METHOD" 
+                        default="" 
+                        required="true" />
+
+                <field  
+                        name="email_confirm" 
+                        type="text" 
+                        required="true" 
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_CONFIRM_EMAIL" 
+                        description="COM_JUX_REAL_ESTATE_CONFIRM_EMAIL"
+                        class="inputbox" />
+
+                <field  
+                        name="days" 
+                        type="text" 
+                        class="inputbox" 
+                        size="40" 
+                        label="COM_JUX_REAL_ESTATE_RECURRING_TIMES" 
+                        default="" 
+                        required="true" />
+
+                <field  
+                        name="company_id" 
+                        type="JUXCompany" 
+                        label="COM_JUX_REAL_ESTATE_COMPANY"
+                        class="inputbox" 
+                        filter="intval" 
+                        required="true"/>
+
+                <field 
+                        name="address" 
+                        type="text" 
+                        size="30" 
+                        label="COM_JUX_REAL_ESTATE_ADDRESS"
+                        description="COM_JUX_REAL_ESTATE_ADDRESS" 
+                        class="inputbox" />
+
+                <field  
+                        name="city"
+                        type="text"
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_CITY"
+                        description="COM_JUX_REAL_ESTATE_CITY"
+                        class="inputbox" />
+
+                <field 
+                        name="locstate" 
+                        type="JUXLocstate"
+                        class="inputbox"
+                        label="COM_JUX_REAL_ESTATE_STATE" 
+                        description=""/>
+
+                <field
+                        name="zip"
+                        type="text"
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_ZIP"
+                        description="COM_JUX_REAL_ESTATE_ZIP"
+                        class="inputbox" />
+
+                <field
+                        name="country_id"
+                        type="JUXCountry"
+                        label="COM_JUX_REAL_ESTATE_COUNTRY"
+                        class="inputbox" />
+
+                <field
+                        name="phone"
+                        type="text"
+                        required="true"
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_PHONE"
+                        description="COM_JUX_REAL_ESTATE_PHONE"
+                        class="inputbox" />
+
+                <field
+                        name="mobile"
+                        type="text"
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_MOBILE"
+                        description="COM_JUX_REAL_ESTATE_MOBILE"
+                        class="inputbox" />
+
+                <field
+                        name="organization"
+                        type="text"
+                        size="30"
+                        label="COM_JUX_REAL_ESTATE_ORGANIZATION"
+                        description="COM_JUX_REAL_ESTATE_ORGANIZATION"
+                        class="inputbox" />
+
+                <!-- web -->
+                <field 
+                        name="website" 
+                        type="url" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_WEBSITE"
+                        size="30"
+                        description="COM_JUX_REAL_ESTATE_FULL_URL_DESC" />
+
+                <field 
+                        name="msn" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_MSN" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="skype" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_SKYPE" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="googleplus" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_GOOGLEPLUS" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="linkedin" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_LINKEDIN" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="facebook" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_FACEBOOK" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="twitter" 
+                        type="text" 
+                        class="inputbox" 
+                        label="COM_JUX_REAL_ESTATE_TWITTER" 
+                        size="30" 
+                        description="" />
+
+                <field 
+                        name="avatar" 
+                        type="juxmedia" 
+                        directory="jux_real_estate/agents" 
+                        hide_none="1"
+                        preview="flase" 
+                        label="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_AVATAR" 
+                        description="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_AVATAR" />
+
+                <field 
+                        name="description" 
+                        type="textarea" 
+                        class="textarea" 
+                        rows="14" 
+                        label="JGLOBAL_DESCRIPTION" 
+                        description="COM_JUX_REAL_ESTATE_SUB_DESC" />  
+
+                <field
+                        name="plan_id"
+                        type="JUXPlan"
+                        label="COM_JUX_REAL_ESTATE_PLAN"
+                        class="inputbox" 
+                        required="true" 
+                        filter="intval" />
+
+                <field 
+                        name="oldpassword" 
+                        type="password"
+                        autocomplete="off"
+                        class="validate-password"
+                        description="COM_USERS_PROFILE_PASSWORD1_DESC"
+                        field="password1"
+                        filter="raw"
+                        label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+                        message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+                        size="30"
+                        validate="equals" />
+
+
+                <field 
+                        name="newpassword" 
+                        type="password"
+                        autocomplete="off"
+                        class="validate-password"
+                        description="COM_USERS_PROFILE_PASSWORD2_DESC"
+                        field="password2"
+                        filter="raw"
+                        label="COM_USERS_PROFILE_PASSWORD2_LABEL"
+                        message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+                        size="30"
+                        validate="equals" />
+
+                <field 
+                        name="confirmpassword" 
+                        type="password"
+                        autocomplete="off"
+                        class="validate-password"
+                        description="COM_USERS_PROFILE_PASSWORD3_DESC"
+                        field="password3"
+                        filter="raw"
+                        label="COM_USERS_PROFILE_PASSWORD3_LABEL"
+                        message="COM_USERS_PROFILE_PASSWORD3_MESSAGE"
+                        size="30"
+                        validate="equals" />
+
+        </fieldset>
+</form>

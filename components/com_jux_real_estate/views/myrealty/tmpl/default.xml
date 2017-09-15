@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_MY_REALTY">
+		<message>
+			<![CDATA[My Realty Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_MY_REALTY</name>
+		<description>COM_JUX_REAL_ESTATE_MY_REALTY</description>
+	</state>
+	<fieldset name="basic">
+		<field 
+			name="display_num" 
+			type="text" 
+			size="3" 
+			default="5" 
+			label="COM_JUX_REAL_ESTATE_MY_REALTY_DISPLAY_NUM" 
+			description="COM_JUX_REAL_ESTATE_MY_REALTY_DISPLAY_NUM" />
+	</fieldset>
+</metadata>

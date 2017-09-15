@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="AddAgent Form">
+		<message>
+			JUX Real Estate Component - AddAgent Form
+		</message>
+	</layout>
+	<state>
+		<name>Add an Agent</name>
+		<description>JUX Real Estate Component - AddAgent Form</description>
+	</state>
+</metadata>

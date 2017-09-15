@@ -1,0 +1,89 @@
+.gm-style-iw {
+  top: 15px !important;
+  left: 25px !important;
+}
+.map_info_details {
+  width: 360px;
+}
+.map_info_details .top_info {
+  float: left;
+}
+.map_info_details .top_info a {
+  float: left;
+  position: relative;
+}
+.map_info_details .top_info span.contact {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  padding: 3px 5px;
+  color: #000;
+}
+.map_info_details .bottom_info {
+  float: left;
+}
+.map_info_details .bottom_info .title {
+  font-size: 16px;
+  color: #434a54;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+.map_info_details .bottom_info .title a {
+  text-decoration: none;
+  color: #404040;
+}
+.map_info_details .bottom_info .title a:hover {
+  color: #1F1F1F;
+}
+.map_info_details .bottom_info .price {
+  font-size: 13px!important;
+  position: absolute;
+  bottom: 3px;
+  left: 14px;
+  height: 20px;
+  border-top: 1px solid #f0f0f0;
+  width: 360px;
+  padding-top: 5px;
+  left: 0px;
+}
+.map_info_details .bottom_info .price span#infosize {
+  color: #323232;
+  font-size: 13px!important;
+  float: right;
+  background-image: url(../images/icon-size.png);
+  height: 17px;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  padding-left: 16px;
+  background-position: 0px 4px;
+  line-height: 22px;
+  margin-top: -3px;
+}
+.map_info_details .bottom_info .price span#infobath {
+  color: #323232;
+  font-size: 13px!important;
+  float: right;
+  background-image: url(../images/icon_bath.png);
+  height: 19px;
+  background-repeat: no-repeat;
+  margin-left: 9px;
+  padding-left: 19px;
+  background-position: 0px 2px;
+  line-height: 22px;
+  margin-top: -3px;
+}
+.map_info_details .bottom_info .price span#inforoom {
+  color: #323232;
+  font-size: 13px!important;
+  float: right;
+  background-image: url(../images/icon_bed.png);
+  height: 17px;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  padding-left: 22px;
+  background-position: 0px 6px;
+  line-height: 22px;
+  margin-top: -3px;
+}

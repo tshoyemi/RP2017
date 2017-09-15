@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+        <field 
+                name="id" 
+                type="text" 
+                default="0" 
+                readonly="true" 
+                class="readonly" 
+                label="JGLOBAL_FIELD_ID_LABEL"
+                description="JGLOBAL_FIELD_ID_DESC" />
+
+        <field 
+                name="username" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_USER_NAME"
+                description="COM_JUX_REAL_ESTATE_NAME" 
+                required="true" />
+        
+        <field 
+                name="alias" 
+                type="text" 
+                label="JFIELD_ALIAS_LABEL"
+                description="JFIELD_ALIAS_DESC" 
+                class="inputbox" 
+                size="30" 
+                maxlength="255" />      
+       
+        <field 
+                name="address" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_ADDRESS"
+                description="COM_JUX_REAL_ESTATE_ADDRESS" 
+                default="" />    
+        
+        <field 
+                name="fax" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_FAX"
+                description="COM_JUX_REAL_ESTATE_FAX" 
+                default="" />
+        
+        <field 
+                name="organization" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_ORGANIZATION"
+                description="COM_JUX_REAL_ESTATE_ORGANIZATION" 
+                default="" />
+
+        <field
+                name="country_id"
+                type="JUXCountry"
+                label="COM_JUX_REAL_ESTATE_COUNTRY"
+                class="inputbox" 
+                filter="intval" />
+
+        <field 
+                name="phone" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_PHONE"
+                description="COM_JUX_REAL_ESTATE_PHONE" 
+                default="" 
+                required="true" />
+        
+        <field 
+                name="email" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_EMAIL"
+                description="COM_JUX_REAL_ESTATE_EMAIL" 
+                default="" 
+                required="true" />
+        <!-- web -->
+        <field 
+                name="website" 
+                type="url" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_WEBSITE"
+                description="COM_JUX_REAL_ESTATE_FULL_URL_DESC" />
+        
+        <field 
+                name="msn" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_MSN" 
+                description="" />
+        <field 
+                name="skype" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_SKYPE" 
+                description="" />
+        
+        <field 
+                name="googleplus" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_GOOGLEPLUS" 
+                description="" />
+        
+        <field 
+                name="linkedin" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_LINKEDIN" 
+                description="" />
+        <field 
+                name="facebook" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_FACEBOOK" 
+                description="" />
+        <field 
+                name="twitter" 
+                type="text" 
+                class="inputbox" 
+                label="COM_JUX_REAL_ESTATE_TWITTER" 
+                description="" />
+
+        <!--Payment infomation-->
+        <field
+                name="plan_id"
+                type="JUXPlan"
+                label="COM_JUX_REAL_ESTATE_PLAN"
+                class="inputbox" 
+                required="true" 
+                filter="intval" />
+
+        <field 
+                name="transaction_id" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_TRANSACTION_ID"
+                description="COM_JUX_REAL_ESTATE_TRANSACTION_ID" 
+                default="" 
+                required="true" />
+
+        <field 
+                name="payment_method" 
+                type="text" 
+                class="inputbox"
+                label="COM_JUX_REAL_ESTATE_PAYMENT_METHOD"
+                description="COM_JUX_REAL_ESTATE_PAYMENT_METHOD" 
+                default="" 
+                required="true" />
+        
+        <field 
+                name="user_id"
+                type="user" 
+                onchange="checkAgentUser()"
+                label="COM_JUX_REAL_ESTATE_USER"
+                class="inputbox" 
+                required="true" 
+                filter="intval" />
+
+        <field 
+                name="date_created" 
+                type="calendar" 
+                label="COM_JUX_REAL_ESTATE_CREATED_DATE"
+                description="COM_JUX_REAL_ESTATE_CREATED_DATE" 
+                class="inputbox" size="22"
+                format="%Y-%m-%d %H:%M:%S" 
+                filter="user_utc" 
+                default="now" 
+                readonly="true" />
+        
+        <field 
+                name="date_paid" 
+                type="calendar" 
+                label="COM_JUX_REAL_ESTATE_PAYMENT_DATE"
+                description="COM_JUX_REAL_ESTATE_PAYMENT_DATE" 
+                class="inputbox" 
+                size="22"
+                format="%Y-%m-%d %H:%M:%S" 
+                filter="user_utc" 
+                required="true" />
+
+        <!--end payment-->
+        <field
+                name="ordering"
+                type="JUXOrdering"
+                label="JFIELD_ORDERING_LABEL"
+                description="JFIELD_ORDERING_DESC"
+                table="agents"
+                class="input-medium" />
+	
+        <field 
+                name="sub_desc" 
+                type="textarea" 
+                class="inputbox textarea" 
+                rows="4" 
+                filter="raw" 
+                label="COM_JUX_REAL_ESTATE_SUB_DESC" 
+                description="COM_JUX_REAL_ESTATE_SUB_DESC" />
+	
+        <field 
+		name="description" 
+		type="editor" 
+		buttons="true" 
+		hide="pagebreak,readmore"
+		class="inputbox"
+		filter="JComponentHelper::filterText"
+		label="JGLOBAL_DESCRIPTION" />
+
+        <field 
+		name="published" 
+		type="list" 
+		label="JSTATUS"
+		description="JFIELD_PUBLISHED_DESC" 
+		class="inputbox"
+		filter="intval" 
+		size="1" 
+		default="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field 
+		name="approved" 
+		type="radio" 
+		label="COM_JUX_REAL_ESTATE_APPROVE"
+		class="btn-group"
+		filter="intval" 
+		size="1" 
+		default="0" 
+		required="true"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field 
+		name="featured" 
+		type="list" 
+		class="inputbox" 
+		label="JFEATURED" 
+		description="" 
+		filter="intval" 
+		size="1"
+		default="0"
+	>
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+	
+        <field
+		name="avatar"
+		type="media"
+		directory="jux_real_estate/agents"
+		hide_none="1"
+		preview="flase"
+		label="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_AVATAR"
+		description="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_AVATAR_DESC" />
+	
+        <field 
+		name="access" 
+		type="accesslevel" 
+		label="JFIELD_ACCESS_LABEL"
+		description="JFIELD_ACCESS_DESC" 
+		class="input-medium" 
+		size="1" />
+
+        <field 
+		name="language" 
+		type="contentlanguage" 
+		label="JFIELD_LANGUAGE_LABEL"
+		description="COM_JUX_REAL_ESTATE_LANGUAGE_DESC" 
+		class="input-medium" 
+		size="1"
+        >
+            <option value="*">JALL</option>
+        </field>
+    </fieldset>
+</form>

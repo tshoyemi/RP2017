@@ -1,0 +1,307 @@
+.jux-agents-listing .agent-filter input,
+.jux-agents-listing .agent-filter select {
+  height: 30px;
+  width: 30%;
+}
+@media screen and (max-width: 479px) {
+  .jux-agents-listing .agent-filter input#filter-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .jux-agents-listing .agent-filter select {
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .jux-agents-listing .agent-filter select:nth-child(even) {
+    margin-right: 4%;
+  }
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 479px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item {
+    display: table;
+  }
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .leftcontent {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .leftcontent .agent-image img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item .leftcontent .agent-image img {
+    height: auto;
+  }
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .leftcontent .agent-image .img-responsive {
+  height: 240px;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info {
+  font-size: 13px;
+  display: inline-block;
+  line-height: 30px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 800px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info {
+    font-size: 13px;
+    padding-bottom: 113px;
+  }
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info i {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 1px solid #ececec;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0 10px 40px;
+  list-style: none;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+    margin-left: -25px;
+    border-bottom: 0px solid #ececec;
+  }
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li {
+  float: left;
+  margin-right: 5px;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a {
+  display: block;
+  background: #eee;
+  color: #a5a5a5;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a:hover {
+  background-color: #2D71B5;
+  color: #fff;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #c1b547;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  border: 0 none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  white-space: nowrap;
+  padding: 12px 12px;
+  margin-bottom: 0;
+  background-color: #f0e797;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.jux-agents-listing .agents-listing .grid-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a:hover {
+  background-color: #2D71B5;
+  color: #fff;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 767px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item {
+    display: table;
+  }
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .leftcontent {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .leftcontent .agent-image img {
+  width: 100%;
+}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .leftcontent .agent-image img {
+    height: 385px !important;
+    width: auto;
+  }
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info {
+  font-size: 13px;
+  display: inline-block;
+  line-height: 30px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info i {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 8px;
+}
+@media screen and (max-width: 1280px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-info i {
+    float: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-description {
+    padding-bottom: 113px;
+  }
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 1px solid #ececec;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+  border-bottom: 1px solid #ececec;
+  padding: 9px 0 10px 80px;
+  list-style: none;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 991px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+    width: 131%;
+    margin-left: -47px;
+    border-bottom: 0px solid #ececec;
+  }
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li {
+  float: left;
+  margin-right: 5px;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a {
+  display: block;
+  background: #eee;
+  color: #a5a5a5;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a:hover {
+  background-color: #75b08a;
+  color: #fff;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 991px) {
+  .jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action {
+    width: 100%;
+  }
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #c1b547;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  border: 0 none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  white-space: nowrap;
+  padding: 13px 12px;
+  margin-bottom: 0;
+  background-color: #f0e797;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.jux-agents-listing .agents-listing .list-layout .agent-item .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a:hover {
+  background-color: #2D71B5;
+  color: #fff;
+}

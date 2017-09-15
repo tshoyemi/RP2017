@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="components/com_jux_real_estate/models/fields">
+	    <field 
+		    name="id" 
+		    type="hidden" 
+		    default="0" />
+	    <field
+		    name="first_name"
+		    type="text"
+		    required="true"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_FIRST_NAME"
+		    description="COM_JUX_REAL_ESTATE_FIRST_NAME"
+		    class="inputbox" />
+
+	    <field
+		    name="last_name"
+		    type="text"
+		    required="true"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_LAST_NAME"
+		    description="COM_JUX_REAL_ESTATE_LAST_NAME"
+		    class="inputbox" />
+	    
+	    <field 
+		    name="alias" 
+		    type="text" 
+		    label="JFIELD_ALIAS_LABEL"
+		    description="JFIELD_ALIAS_DESC" 
+		    class="inputbox"
+		    size="30" 
+		    maxlength="255"/>
+	    
+	    <field
+		    name="email"
+		    type="text"
+		    required="true"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_EMAIL"
+		    description="COM_JUX_REAL_ESTATE_EMAIL"
+		    class="inputbox" />
+
+	    <field
+		    name="email_confirm"
+		    type="text"
+		    required="true"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_CONFIRM_EMAIL"
+		    description="COM_JUX_REAL_ESTATE_CONFIRM_EMAIL"
+		    class="inputbox" />
+
+	    <field
+		    name="company_id"
+		    type="JUXCompany"
+		    label="COM_JUX_REAL_ESTATE_COMPANY"
+		    class="inputbox" filter="intval" required="true"/>
+
+	    <field
+		    name="address"
+		    type="text"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_ADDRESS"
+		    description="COM_JUX_REAL_ESTATE_ADDRESS"
+		    class="inputbox" />
+
+	    <field
+		    name="city"
+		    type="text"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_CITY"
+		    description="COM_JUX_REAL_ESTATE_CITY"
+		    class="inputbox" />
+
+	    <field 
+		    name="locstate" 
+		    type="JUXLocstate"
+		    class="inputbox"
+		    label="COM_JUX_REAL_ESTATE_STATE" 
+		    description=""/>
+
+	    <field
+		    name="zip"
+		    type="text"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_ZIP"
+		    description="COM_JUX_REAL_ESTATE_ZIP"
+		    class="inputbox" />
+
+	    <field
+		    name="country_id"
+		    type="JUXCountry"
+		    label="COM_JUX_REAL_ESTATE_COUNTRY"
+		    class="inputbox" />
+
+	    <field
+		    name="phone"
+		    type="text"
+		    required="true"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_PHONE"
+		    description="COM_JUX_REAL_ESTATE_PHONE"
+		    class="inputbox" />
+	    
+	    <field
+		    name="mobile"
+		    type="text"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_MOBILE"
+		    description="COM_JUX_REAL_ESTATE_MOBILE"
+		    class="inputbox" />
+	    
+	    <field
+		    name="organization"
+		    type="text"
+		    size="30"
+		    label="COM_JUX_REAL_ESTATE_ORGANIZATION"
+		    description="COM_JUX_REAL_ESTATE_ORGANIZATION"
+		    class="inputbox" />
+	    
+	    <!-- web -->
+	    <field 
+		    name="website" 
+		    type="url" 
+		    class="inputbox" 
+		    label="COM_JUX_REAL_ESTATE_WEBSITE" 
+		    size="30"
+		    description="COM_JUX_REAL_ESTATE_FULL_URL_DESC" />
+	    
+	    <field 
+		    name="msn" 
+		    type="text" 
+		    class="inputbox" 
+		    label="COM_JUX_REAL_ESTATE_MSN" 
+		    size="30"
+		    description="" />
+	    
+	    <field 
+		    name="skype"
+		    type="text"
+		    class="inputbox"
+		    label="COM_JUX_REAL_ESTATE_SKYPE" 
+		    size="30" 
+		    description="" />
+	    
+	    <field 
+		    name="gtalk"
+		    type="text" 
+		    class="inputbox" 
+		    label="COM_JUX_REAL_ESTATE_GTALK" 
+		    size="30" 
+		    description="" />
+	    
+	    <field 
+		    name="linkedin"
+		    type="text"
+		    class="inputbox" 
+		    label="COM_JUX_REAL_ESTATE_LINKEDIN"
+		    size="30"
+		    description="" />
+	    
+	    <field
+		    name="facebook"
+		    type="text" 
+		    class="inputbox" 
+		    label="COM_JUX_REAL_ESTATE_FACEBOOK"
+		    size="30" 
+		    description="" />
+	    
+	    <field 
+		    name="twitter"
+		    type="text" 
+		    class="inputbox"
+		    label="COM_JUX_REAL_ESTATE_TWITTER"
+		    size="30" 
+		    description="" />
+
+	    <field
+		    name="sub_desc" 
+		    type="textarea"
+		    class="inputbox textarea"
+		    rows="4" 
+		    label="COM_JUX_REAL_ESTATE_SUB_DESC" 
+		    description="COM_JUX_REAL_ESTATE_SUB_DESC" /> 
+	       
+	    <field 
+		    name="description"
+		    type="editor" 
+		    buttons="true"
+		    hide="pagebreak,readmore"
+		    class="inputbox"
+		    filter="JComponentHelper::filterText"
+		    label="JGLOBAL_DESCRIPTION" 
+		    required="true" />
+	    
+	    <field
+		    name="payment_method"
+		    type="JUXPaymentMethod"
+		    size="10"
+		    label="COM_JUX_REAL_ESTATE_PAYMENT_METHOD"
+		    description="COM_JUX_REAL_ESTATE_PAYMENT_METHOD"
+		    class="inputbox"
+		    required="true" />
+    </fieldset>
+</form>

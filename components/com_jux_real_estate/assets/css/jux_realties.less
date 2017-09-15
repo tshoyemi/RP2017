@@ -1,0 +1,463 @@
+#adminForm  {
+    select{
+        @media screen and (max-width: 979px) {
+                width: 24%;
+        }
+        @media screen and (max-width: 450px){
+                width: 100%;
+                margin-bottom: 15px;
+        }
+    }
+} 
+
+.jux-realties {
+	.list-style.realty-item {
+		margin-left: 15px;
+		margin-right: 15px;
+		background-color: #f9f9f9;
+		display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  overflow: hidden;
+		@media screen and (max-width: 767px) {
+							display: table;
+						}
+		.realty-image {
+			padding-left: 0px;
+			padding-right: 0px;
+			.thumb-holder {
+				position: relative;
+				overflow: hidden;
+				.bannerleft {
+					position: absolute;
+					bottom: inherit;
+					left: 0;
+					z-index: 999 !important;
+				}
+				.bannerright {
+					position: absolute;
+					bottom: inherit;
+					right: 0;
+					z-index: 9;
+				}
+
+				.status {
+					position: absolute;
+					bottom: 10px;
+					margin-left: 10px;
+					color: #fff;
+					.type {
+						background-color: rgba(0, 0, 0, 0.6);
+						float: left;
+						padding: 6px 9px;
+					}
+					.new {
+						float: left;
+						padding: 6px 9px;
+						background-color: rgba(0, 0, 0, 0.6);
+						margin-left: 10px;
+						color: #FFFD00;
+					}
+				}
+				.image {
+					img {
+						width: 100%;
+						
+
+					}
+				}
+			}
+		}
+		.realty-wrap {
+			position: relative;
+			@media screen and (max-width: 768px) {
+			padding-bottom: 90px;}
+			.realty-title {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				a {
+					font-size: 22px;
+					font-weight: bold;
+					color: #373737;
+					text-decoration: none;
+					@media screen and (max-width: 800px) {
+						font-size: 15px;
+					}
+				}
+			}
+			.realty-address {
+				i {
+					margin-right: 5px;
+				}
+				color: #444;
+				font-style: italic;
+				margin-bottom: 10px;
+				@media screen and (max-width: 768px) {
+					margin-bottom: -3px;
+				}
+			}
+			.realty-desc {
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
+			}
+			.realty-summary {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				.realty-detail {
+					background: #f9f9f9;
+					border-top: 1px solid #e5e5e5;
+					border-bottom: 1px solid #e5e5e5;
+					display: table;
+					width: 100%;
+					
+					
+					> div {
+						width: 31.33%;
+						display: table-cell;
+						  vertical-align: middle;
+						  text-align: center;
+						  padding: 14px 8px;
+
+					}
+					> div.size {
+						border-right: 1px solid #e5e5e5;
+						span {
+							background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+							padding: 10px 5px 10px 30px;
+							background-size: 25px 20px;
+							
+						}
+
+					} 
+					> div.bedrooms {
+						border-right: 1px solid #e5e5e5;
+						span {
+							background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+							padding: 10px 5px 10px 30px;
+							background-size: 25px 20px;
+						}
+					}
+
+					> div.bathrooms span {
+						background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+						padding: 10px 5px 10px 30px;
+						background-size: 25px 20px;
+					}
+				}
+				.realty-info {
+					> div {
+						padding: 0 26px;
+					}
+					.realty-price {
+						white-space: nowrap;
+						width: 50%;
+						float: left;
+						text-align: center;
+						font-size: 18px;
+						font-weight: bold;
+						border-right: 1px solid #e5e5e5;
+						padding: 12px 15px;
+						background: #ececec;
+						@media screen and (max-width: 991px) {
+								font-size: 13px;}
+						@media screen and (max-width: 479px) {
+								font-size: 9px;
+						}
+						.slashprice {
+							font-size: 11px;
+							@media screen and (max-width: 479px) {
+								font-size: 9px;
+						}	
+						}
+					}
+					.realty-action {
+						padding: 0;
+						width: 50%;
+						float: left;
+						width: 50%;
+						float: left;
+						font-size: 18px;
+						font-weight: bold;
+						text-align: center;
+						text-transform: uppercase;
+						@media screen and (max-width: 991px) {
+								font-size: 13px;}
+						@media screen and (max-width: 479px){
+							font-size: 9px;
+						}
+						a {
+							white-space: nowrap;
+							display: block;
+							color: #C1B547;
+							text-decoration: none;
+							background-color: #f0e797;
+							padding: 12px 15px;
+							-webkit-transition: all .25s ease-in-out;
+							-moz-transition: all .25s ease-in-out;
+							-ms-transition: all .25s ease-in-out;
+							-o-transition: all .25s ease-in-out;
+							transition: all .25s ease-in-out;
+							&:hover {
+								color: #fff;
+								background-color: #2D71B5;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+	.grid-style.realty-item {
+		background: #F9F9F9;
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+		position: relative;
+		.realty-image {
+			padding-left: 0px;
+			padding-right: 0px;
+			
+			.thumb-holder {
+				position: relative;
+				overflow: hidden;
+				height: 100%;
+				.bannerleft {
+					position: absolute;
+					bottom: inherit;
+					left: 0;
+					z-index: 999 !important;
+				}
+				.bannerright {
+					position: absolute;
+					bottom: inherit;
+					right: 0;
+					z-index: 9;
+				}
+				.status {
+					position: absolute;
+					bottom: 10px;
+					margin-left: 10px;
+					color: #fff;
+					.type {
+						background-color: rgba(0, 0, 0, 0.6);
+						float: left;
+						padding: 6px 9px;
+					}
+					.new {
+						float: left;
+						padding: 6px 9px;
+						background-color: rgba(0, 0, 0, 0.6);
+						margin-left: 10px;
+						color: #FFFD00;
+					}
+				}
+				.image {
+					height: 100%;
+					width: auto;
+					img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+		.realty-wrap {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 40px;
+			.realty-title {
+				margin-top: 20px;
+				margin-bottom: 10px;
+				a {
+					font-size: 16px;
+					font-weight: bold;
+					color: #373737;
+					text-decoration: none;
+				}
+			}
+			.realty-address {
+				i {
+					margin-right: 5px;
+				}
+				color: #444;
+				font-style: italic;
+				margin-bottom: 10px;
+				font-size: 11px;
+			}
+			.realty-desc {
+				margin-bottom: 40px;
+			}
+			.realty-summary {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				.realty-detail {
+					background: #f9f9f9;
+					border-top: 1px solid #e5e5e5;
+					border-bottom: 1px solid #e5e5e5;
+					display: table;
+					width: 100%;
+					
+					
+					> div {
+						width: 31.33%;
+						display: table-cell;
+						  vertical-align: middle;
+						  text-align: center;
+						  padding: 14px 8px;
+
+					}
+					> div.size {
+						border-right: 1px solid #e5e5e5;
+						span {
+							background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+							padding: 10px 0px 10px 25px;
+							background-size: 25px 20px;
+						
+						}
+					} 
+					> div.bedrooms {
+						border-right: 1px solid #e5e5e5;
+						span {
+							background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+							padding: 10px 5px 10px 30px;
+							background-size: 25px 20px;
+						}
+					}
+
+					> div.bathrooms span {
+						background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+						padding: 10px 5px 10px 30px;
+						background-size: 25px 20px;
+					}
+				}
+				.realty-info {
+					> div {
+						padding: 0 26px;
+					}
+					.realty-price {
+						white-space: nowrap;
+						width: 50%;
+						float: left;
+						text-align: center;
+						font-size: 14px;
+                                                @media screen and (min-width: 801px) and (max-width: 979px){
+                                                    font-size: 12px;
+                                                }
+                                                @media screen and (max-width: 800px) {
+							font-size: 11px;
+                                                }
+                                                @media screen and (max-width: 320px) {
+                                                        font-size: 10px;
+                                                }
+						font-weight: bold;
+						border-right: 1px solid #e5e5e5;
+						padding: 15px 10px;
+						background: #ececec;
+						.slashprice {
+							font-size: 10px;
+							@media screen and (max-width: 800px) {
+							
+							font-size: 10px;}
+							@media screen and (max-width: 320px) {
+								font-size: 9px;
+							}
+							
+						}
+
+						
+					}
+					.realty-action {
+						padding: 0;
+						width: 50%;
+						float: left;
+						width: 50%;
+						float: left;
+						font-size: 14px;
+                                                @media screen and (min-width: 801px) and (max-width: 979px){
+                                                    font-size: 12px;
+                                                }
+						font-weight: bold;
+						text-align: center;
+						text-transform: uppercase;
+						@media screen and (max-width: 800px) {
+							font-size: 11px;
+                                                }
+                                                @media screen and (max-width: 320px) {
+                                                        font-size: 10px;
+                                                }
+						a {
+							white-space: nowrap;
+							display: block;
+							color: #C1B547;
+							text-decoration: none;
+							background-color: #f0e797;
+							padding: 15px 15px;
+							-webkit-transition: all .25s ease-in-out;
+							-moz-transition: all .25s ease-in-out;
+							-ms-transition: all .25s ease-in-out;
+							-o-transition: all .25s ease-in-out;
+							transition: all .25s ease-in-out;
+							&:hover {
+								color: #fff;
+								background-color: #2D71B5;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+	
+.view {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   overflow: hidden;   
+   text-align: center;  
+   cursor: default;
+   .mask {
+	   width: 100%;
+	   height: 100%;
+	   position: absolute;
+	   overflow: hidden;
+	   top: -100%;
+	   left: 0;	   
+	   border: 0;	  	   
+	   background: rgba(0,0,0,0.7) 
+   }
+   &:hover{
+   		.mask{
+   			top:0;
+   		transition: all 0.3s ease 0s;
+   		}
+   		a.info{
+   			bottom: 50%;
+   			 opacity: 1;
+   			   transition: all 0.4s ease 0.3s;
+   		}
+   }
+}
+
+
+.view a.info {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -100%;
+  transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  opacity: 0;
+  text-decoration: none;
+}
+

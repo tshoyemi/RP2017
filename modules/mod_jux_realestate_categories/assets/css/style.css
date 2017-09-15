@@ -1,0 +1,38 @@
+/**
+ * @version		$Id$
+ * @author		JoomlaUX Admin
+ * @package		Joomla!
+ * @subpackage	JUX Real Estate
+ * @copyright	Copyright (C) 2008 - 2012 by JoomlaUX Solutions. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL version 3
+ */
+#mod-jux-re-categories ul.re-categories-listing {
+  margin: 0;
+}
+#mod-jux-re-categories ul.re-categories-listing li.item {
+  width: 100%;
+  list-style-type: square;
+  font-size: 15px;
+  color: #428bca;
+  position: relative;
+  left: 15px;
+  border-bottom: none !important;
+  margin: 0;
+}
+#mod-jux-re-categories ul.re-categories-listing li.item a {
+  padding: 8px 0px 8px 0px;
+  color: #333333;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: block;
+}
+#mod-jux-re-categories ul.re-categories-listing li.item a:hover {
+  color: #71c2ff;
+  background-color: transparent;
+  padding-left: 7px;
+}

@@ -1,0 +1,132 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: #2d2d2d;
+	border: solid 1px #515151;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+	width: 200px;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 170px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #EBB52D;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(select-icons.png) 0 -116px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	background: url(select-icons.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(select-icons.png) 0 -16px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(select-icons.png) 0 -66px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #fff;
+	border: solid 1px #555;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 200px;
+	z-index: 1;
+	overflow-y: auto;
+}
+
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 3px 7px; float:none;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #555;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #fff;background:#555;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	
+	color: #999;
+	display: block;
+	padding: 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+
+
+
+input.css-checkbox[type="radio"] {
+    display: none;
+}
+input.css-checkbox[type="radio"] + label.css-label {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    height: 20px;
+    line-height: 16px;
+    padding-left: 30px;
+    vertical-align: middle;
+}
+input.css-checkbox[type="radio"]:checked + label.css-label {
+    background-position: 0 -21px;
+}
+label.css-label {
+    -moz-user-select: none;
+    background-image: url("css-checkbox.png");
+}
+
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

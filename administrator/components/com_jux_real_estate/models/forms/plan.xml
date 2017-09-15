@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset 
+	    name="details" 
+	    addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+    />
+	<field 
+		name="id" 
+		type="hidden" 
+		default="0" />
+
+	<field 
+		name="name"
+		type="text" 
+		class="inputbox"
+		size="40"
+		label="COM_JUX_REAL_ESTATE_NAME"
+		description="COM_JUX_REAL_ESTATE_PLAN_FIELD_NAME_DESC" 
+		required="true" />
+
+	<field
+		name="image"
+		type="media"
+		directory="jux_real_estate"
+		hide_none="1"
+		preview="flase"
+		label="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_IMAGE"
+		description="COM_JUX_REAL_ESTATE_UPLOAD_PLAN_IMAGE_DESC"
+	/>
+	
+	<field
+		name="ordering"
+		type="JUXOrdering"
+		label="JFIELD_ORDERING_LABEL"
+		description="JFIELD_ORDERING_DESC"
+		table="plans"
+		class="input-medium" />
+
+	<field 
+		name="price"
+		type="text"
+		class="inputbox"
+		size="40" 
+		label="COM_JUX_REAL_ESTATE_PRICE"
+		default="0"
+		required="true" />
+	
+	<field
+		name="currency_id"
+		type="JUXCurrency"
+		label="COM_JUX_REAL_ESTATE_CURRENCY"
+		class="inputbox" />
+
+    <field 
+	    name="description"
+	    type="editor" 
+	    buttons="true" 
+	    hide="pagebreak,readmore"
+	    class="inputbox"
+	    filter="JComponentHelper::filterText"
+	    label="JGLOBAL_DESCRIPTION" 
+	    required="true" />
+
+    <field 
+	    name="days" 
+	    type="text"
+	    class="inputbox"
+	    size="40" 
+	    label="COM_JUX_REAL_ESTATE_DAYS"
+	    default="0" 
+	    required="true" />
+
+    <field
+	    name="days_type" 
+	    type="list" 
+	    class="inputbox"
+	    size="1" 
+	    default="day"
+    >
+	    <option value="day">COM_JUX_REAL_ESTATE_DAYS </option>
+	    <option value="month"> COM_JUX_REAL_ESTATE_MONTHS </option>
+    </field>
+
+    <field 
+	    name="count_limit" 
+	    type="text" 
+	    class="inputbox"
+	    size="40" 
+	    label="COM_JUX_REAL_ESTATE_COUNT_LIMIT"
+	    default="0" 
+	    required="true" />
+
+    <field 
+	    name="published" 
+	    type="list" 
+	    label="JSTATUS"
+	    description="JFIELD_PUBLISHED_DESC" 
+	    class="input-medium"
+	    filter="intval" 
+	    size="1" 
+	    default="1"
+    >
+	    <option value="1"> JPUBLISHED </option>
+	    <option value="0"> JUNPUBLISHED </option>
+    </field>
+    
+    <field 
+	    name="featured"
+	    type="list" 
+	    class="input-medium" 
+	    label="JFEATURED"
+	    description="" 
+	    filter="intval" 
+	    size="1" 
+	    default="0"
+    >
+	    <option value="1">JYES</option>
+	    <option value="0">JNO</option>
+    </field>
+    
+    <field 
+	    name="date_created" 
+	    type="calendar"
+	    filter="user_utc"
+	    format="%Y-%m-%d %H:%M:%S"
+	    label="JGLOBAL_FIELD_CREATED_LABEL"
+	    size="10" 
+	    required="true" 
+	    default="now" 
+	    readonly="true" />
+
+    <field 
+	    name="publish_up"
+	    type="calendar"
+	    filter="user_utc"
+	    format="%Y-%m-%d"
+	    label="COM_JUX_REAL_ESTATE_PUBLISH_UP"
+	    size="22" 
+	    required="true" 
+	    default="0000-00-00" />
+
+    <field 
+	    name="publish_down"
+	    type="calendar"
+	    filter="user_utc"
+	    format="%Y-%m-%d"
+	    label="COM_JUX_REAL_ESTATE_PUBLISH_DOWN"
+	    size="22"
+	    default="0000-00-00" />
+    
+    <field 
+	    name="old_avatar" 
+	    type="hidden" 
+	    default="" />
+</form>

@@ -1,0 +1,2 @@
+INSERT INTO `#__re_currencies` (`id`, `title`, `code`, `sign`, `position`, `description`, `published`, `ordering`, `checked_out`, `checked_out_time`) VALUES
+(1, 'US.Dollar', 'USD', '$', 0, '', 1, 2, 0, '0000-00-00 00:00:00');

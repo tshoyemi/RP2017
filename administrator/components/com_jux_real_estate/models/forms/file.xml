@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general"
+                  addfieldpath="/administrator/components/com_jux_real_estate/models/fields">
+        <field
+            name="realty_id"
+            type="JUXRealty"
+            label="COM_JUX_REAL_ESTATE_REALTY"
+            class="inputbox" filter="intval" required="true"/>      
+			
+        <field name="description" type="textarea" class="inputbox"
+                       label="COM_JUX_REAL_ESTATE_FILE_DESCRIPTION"
+                       description="COM_JUX_REAL_ESTATE_FILE_DESCRIPTION_DESC"
+                       filter="raw"/>
+    </fieldset>
+    <fieldset name="change-logs">
+
+        <field
+            name="changelogs"
+            type="hidden" />
+
+    </fieldset>
+    <fieldset name="file_info">
+        <field
+            name="file_name"
+            type="text"
+            size="30"
+            readonly="true"
+            label="COM_JUX_REAL_ESTATE_FILE_NAME"
+            description="COM_JUX_REAL_ESTATE_FILE_NAME_DESC" />
+	
+
+        <field
+            name="size"
+            type="text"
+            readonly="true"
+            label="COM_JUX_REAL_ESTATE_SIZE"
+            description="COM_JUX_REAL_ESTATE_SIZE_DESC" />
+    </fieldset>
+
+    <fieldset name="publishing">
+        <field name="published" type="radio" label="JSTATUS"
+                       description="JFIELD_PUBLISHED_DESC" class="btn-group"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field name="ordering" type="JUXOrdering"
+                       label="JFIELD_ORDERING_LABEL"
+                       description="JFIELD_ORDERING_DESC"
+                       table="files" class="btn-group" size="1"/>
+
+        <field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+                       description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+                       readonly="true"  />
+    </fieldset>
+</form>

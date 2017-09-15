@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+    <name>JUX Real Estate Realty Search</name>
+    <creationDate>Sep 25 , 2015</creationDate>
+    <author>JoomlaUX</author>
+    <authorEmail>admin@joomlaux.com</authorEmail>
+    <authorUrl>http://www.joomlaux.com</authorUrl>
+    <copyright>Copyright 2012 - 2015 JoomlaUX Solutions. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0.1</version>
+    <description>This module is a part of JUX Real Estate component, to display a search realty form</description>
+    <files>
+        <filename module="mod_jux_realestate_realtysearch">mod_jux_realestate_realtysearch.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>mod_jux_realestate_realtysearch.xml</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="layout"
+                    type="list"
+                    default="vertical"
+                    label="Layout"
+                    description="Choose a Layout to display">
+                    <option value="vertical">Vertical</option>
+                    <option value="horizontal">Horizontal</option>
+                </field>
+                <field
+                    class="btn-group"
+                    name="extrafield"
+                    type="radio"
+                    default="1"
+                    label="Extra Fields"
+                    description="Show all extra fields on search module">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field
+                    class="btn-group"
+                    name="advance"
+                    type="radio"
+                    default="1"
+                    label="Advance Search"
+                    description="Show advance search with more option for search form">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field
+                    class="btn-group"
+                    name="toggle"
+                    type="radio"
+                    default="1"
+                    label="Toggle Advance"
+                    description="Show advance search or not">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field
+                    name="new_price"
+                    type="text"
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_PRICE"
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_PRICE_DESC"
+                    default="0,10000"
+                    hint="MOD_JUX_REALESTATE_REALTYSEARCH_PRICE_HINT"/>
+                <field
+                    name="about_price"
+                    type="text"
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_PRICE"
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_PRICE"
+                    default="200,5000"
+                    hint="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_PRICE_HINT"/>
+                <field
+                    name="new_area" 
+                    type="text" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_AREA" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_AREA_DESC" 
+                    default="0,500" 
+                    hint="MOD_JUX_REALESTATE_REALTYSEARCH_AREA_HINT"/>
+                <field 
+                    name="about_area" 
+                    type="text" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_AREA" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_AREA_DESC" 
+                    default="30,400" 
+                    hint="MOD_JUX_REALESTATE_REALTYSEARCH_ABOUT_AREA_HINT"/>
+                <field 
+                    class="btn-group" 
+                    name="types_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_TYPES_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_TYPES_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="cat_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_STATUS_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_STATUS_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="country_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_COUNTRY_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_COUNTRY_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="states_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_STATES_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_STATES_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="agent_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_AGENT_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_AGENT_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="beds_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_BEDS_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_BEDS_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="baths_advance" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REALESTATE_REALTYSEARCH_BATHS_ADVANCE" 
+                    description="MOD_JUX_REALESTATE_REALTYSEARCH_BATHS_ADVANCE_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field 
+                    class="btn-group" 
+                    name="currencies" 
+                    type="radio" 
+                    default="1" 
+                    label="Currencies" 
+                    description="Show a currencies in front-end">
+                    <option value="1">$</option>
+                    <option value="0">€</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field 
+                    name="cache_time" 
+                    type="text" 
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" 
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <languages>
+        <language tag="en-GB">en-GB.mod_jux_realestate_realtysearch.ini</language>
+    </languages>
+</extension>

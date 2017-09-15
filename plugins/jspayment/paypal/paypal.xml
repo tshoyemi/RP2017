@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="jspayment" method="upgrade">
+	<name>JUX RE Payment - Paypal</name>
+	<author>Nguyen Dinh Luan</author>
+	<creationDate>August 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 JoomlaUX. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>admin@joomlaux.com</authorEmail>
+	<authorUrl>www.joomlaux.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Standard Paypal payment method for JoomlaUX products for Joomla 1.6</description>
+	<files>
+		<filename plugin="paypal">paypal.php</filename>
+		<filename>index.html</filename>
+		<folder>paypal</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_jspayment_paypal.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="test_mode" type="radio" default="1" label="PLG_JSPAYMENT_PAYPAL_TEST_MODE" description="PLG_JSPAYMENT_PAYPAL_TEST_MODE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="paypal_id" type="text" size="50" default="" label="PLG_JSPAYMENT_PAYPAL_PAYPAL_ACCOUNT" description="PLG_JSPAYMENT_PAYPAL_PAYPAL_ACCOUNT_DESC" />
+				<field name="merchant_image" type="text" size="50" default="" label="PLG_JSPAYMENT_PAYPAL_MERCHANT_IMAGE" description="PLG_JSPAYMENT_PAYPAL_MERCHANT_IMAGE_DESC" />
+				<field name="payment_image" type="text" size="50" default="" label="PLG_JSPAYMENT_PAYPAL_PAYMENT_LOGO" description="PLG_JSPAYMENT_PAYPAL_PAYMENT_LOGO_DESC" />
+				<field name="ipn_log" type="radio" default="1" label="PLG_JSPAYMENT_PAYPAL_LOG_IPN_DATA" description="PLG_JSPAYMENT_PAYPAL_LOG_IPN_DATA_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="ipn_debug" type="radio" default="1" label="PLG_JSPAYMENT_PAYPAL_DEBUG" description="PLG_JSPAYMENT_PAYPAL_DEBUG_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="no_shipping" type="radio" default="1" label="PLG_JSPAYMENT_PAYPAL_NO_SHIPPING" description="PLG_JSPAYMENT_PAYPAL_NO_SHIPPING_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="All Types">
+        <message>
+            JUX Real Estate - All Types Layout
+        </message>
+    </layout>
+    <state>
+        <name>All Types</name>
+        <description>JUX Real Estate - All Types Layout</description>
+    </state>
+
+    <fields name="params">
+        <fieldset name="basic">
+            <!--<field name="num_leading_types" type="text" size="3" default="2" label="Number leading" descrption="PARAMLEADING" />-->
+            <field name="num_intro_types" type="text" size="3" default="4" label="Number intro" description="PARAMINTRO" />
+            <!--<field name="num_columns" type="text" size="3" default="2" label="Columns" description="PARAMCOLUMNS" />-->
+            <field name="max_desc" type="text" size="3" default="100" label="Max desc" description="Max description charecter" />
+
+            <field name="orderby_sec" type="list" default="ordering" label="Order by" description="Order that the documents will be displayed in.">
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+                <option value="order">Ordering</option>
+                <option value="rorder">Reverse-Ordering</option>
+            </field>
+            <field name="show_pagination" type="list" default="2" label="Pagination" description="Show/Hide Pagination support">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+                <option value="2">Auto</option>
+            </field>
+            <field name="show_pagination_results" class="btn-group" type="radio" default="1" label="Pagination Results" description="PARAM_PAGINATION_RESULTS">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,28 @@
+.popup{
+    display: none;
+    .popup-text {
+        &.active{
+            position: absolute;
+            width: 30%;
+            top: 20%;
+            left: 35%;
+            text-align: center;
+            background: white;
+            font-size: 16px;
+            .pclose{
+                text-align: right;
+                background: aliceblue;
+                cursor: pointer;
+                span{
+                    color: red;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .ptext{
+            line-height: 22px;
+        }
+    }
+}
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="All Companies">
+        <message>
+            <![CDATA[All Companies]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="num_intro_companies" type="text" size="3" default="4" label="Number intro"
+                   description="PARAMINTRO"/>
+            <field name="max_desc" type="text" size="3" default="100" label="Max desc"
+                   description="Max description charecter"/>
+
+            <field name="show_pagination" type="list" default="2" label="Pagination"
+                   description="Show/Hide Pagination support">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+                <option value="2">Auto</option>
+            </field>
+
+            <field name="show_pagination_results" type="radio" class="btn-group" default="1" label="Pagination Results"
+                   description="PARAM_PAGINATION_RESULTS">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</metadata>

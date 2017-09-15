@@ -1,0 +1,70 @@
+.jux_realestate-loancalculator .mortgage-calculator h3 {
+  font-size: 16px;
+  color: #1a171b;
+  margin-bottom: 23px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.jux_realestate-loancalculator form {
+  margin-bottom: 0px;
+}
+.jux_realestate-loancalculator form .lb {
+  color: #7e7e7e;
+  font-size: 12px!important;
+  font-family: 'Arial';
+  float: left;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+.jux_realestate-loancalculator form input.input-medium {
+  font-family: 'Arial';
+  font-size: 14px;
+  padding: 0px 0px 0px 9px;
+  color: #1a171b;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: none;
+  width: 187px;
+  -webkit-appearance: none;
+  margin-left: 11px;
+  height: 38px;
+  margin-bottom: 11px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.jux_realestate-loancalculator form input.input-medium:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.jux_realestate-loancalculator form .st {
+  font-size: 14px;
+}
+.jux_realestate-loancalculator form .calculated {
+  display: none;
+}
+.jux_realestate-loancalculator form .calculator-bt .btn {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: 'Arial';
+  background-color: #f7f7f7;
+  border-radius: 0px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #C8C8C8;
+  box-shadow: 2px 2px 0px #C4C4C4;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.jux_realestate-loancalculator form .calculator-bt .btn:hover {
+  background-color: #e6e6e6;
+}

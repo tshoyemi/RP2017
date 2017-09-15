@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="My Profile">
+		<message>
+			<![CDATA[List Layout Description]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_AGENT_MY_PROFILE</name>
+		<description>COM_JUX_REAL_ESTATE_AGENT_MY_PROFILE_DESCRIPTION</description>
+	</state>
+</metadata>

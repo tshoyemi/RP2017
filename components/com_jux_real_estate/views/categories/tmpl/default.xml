@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <layout title="All Categories">
+        <message>
+            JUX Real Estate - All Categories Layout
+        </message>
+    </layout>
+    <state>
+        <name>All Categories</name>
+        <description>JUX Real Estate - All Categories Layout</description>
+    </state>
+
+    <fields name="params">
+        <fieldset name="basic">
+            <!--<field name="num_leading_categories" type="text" size="3" default="2" label="Number leading" descrption="PARAMLEADING" />-->
+            <field name="num_intro_categories" type="text" size="3" default="4" label="Number intro" description="The limit intro in page at front-end" />
+            <!--<field name="num_columns" type="text" size="3" default="2" label="Columns" description="PARAMCOLUMNS" />-->
+            <field name="max_desc" type="text" size="3" default="100" label="Max desc" description="Max description charecter" />
+            <field name="thumb_img_width" type="text" size="30" default="100" label="Thumbnail width" description="Thumbnail width" />
+            <field name="thumb_img_height" type="text" size="30" default="100" label="Thumbnail height" description="Thumbnail height" />
+
+            <field name="orderby_sec" type="list" default="ordering" label="Order by" description="Order that the documents will be displayed in.">
+                <option value="alpha">Title Alphabetical</option>
+                <option value="ralpha">Title Reverse-Alphabetical</option>
+            </field>
+            <field name="show_pagination" type="list" default="2" label="Pagination" description="Show/Hide Pagination support">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+                <option value="2">Auto</option>
+            </field>
+            <field name="show_pagination_results" class="btn-group" type="radio" default="1" label="Pagination Results" description="PARAM_PAGINATION_RESULTS">
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

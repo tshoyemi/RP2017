@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details"
+	      addfieldpath="/administrator/components/com_jux_real_estate/models/fields"
+    >
+	<field 
+		name="id" 
+		type="hidden" />
+
+	<field
+		name="name"
+		type="text"
+		size="50"
+		maxlength="250"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_NAME"         
+		onchange="checkFieldName();"
+		required="true" />
+
+	<field
+		name="title"
+		type="text"
+		size="40"
+		maxlength="250"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_TITLE"
+		required="true" />
+
+	<field
+		name="field_type"
+		type="list"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_FIELD_TYPE"
+		filter="intval"
+		size="1" 
+		default="" 
+		required="true"
+	>
+		<option value="">COM_JUX_REAL_ESTATE_FIELD_TYPE</option>
+		<option value="0">COM_JUX_REAL_ESTATE_TEXTBOX</option>
+		<option value="1">COM_JUX_REAL_ESTATE_TEXTAREA</option>
+		<option value="2">COM_JUX_REAL_ESTATE_DROPDOWN</option>
+		<option value="4">COM_JUX_REAL_ESTATE_RADIO_LIST</option>
+	</field>
+
+	<field
+		name="ordering"
+		type="JUXOrdering"
+		label="JFIELD_ORDERING_LABEL"
+		description="JFIELD_ORDERING_DESC"
+		table="fields"
+		class="input-medium"
+		size="1" />
+
+	<field 
+		name="published" 
+		type="list" 
+		label="JSTATUS"
+		description="JFIELD_PUBLISHED_DESC" 
+		class="input-medium"
+		filter="intval" 
+		size="1" 
+		default="1"
+	>
+		<option value="1"> JPUBLISHED </option>
+		<option value="0"> JUNPUBLISHED </option>
+	</field>
+
+	<field 
+		name="required" 
+		type="list" 
+		label="COM_JUX_REAL_ESTATE_REQUIRED"
+		class="inputbox"
+		filter="intval" 
+		size="1" 
+		default="0"
+	>
+		<option value="1"> JYES </option>
+		<option value="0"> JNO </option>
+	</field>
+
+	<field 
+		name="access"
+		type="list" 
+		label="COM_JUX_REAL_ESTATE_ACCESS"
+		class="input-medium"
+		filter="intval" 
+		size="1"
+		default="0"
+	>
+		<option value="1"> JYES </option>
+		<option value="0"> JNO </option>
+	</field>
+	
+	<field 
+		name="search_field"
+		type="list"
+		label="COM_JUX_REAL_ESTATE_SEARCH_FIELD"
+		class="inputbox"
+		filter="intval" 
+		size="1" 
+		default="0"
+	>
+		<option value="1"> JYES </option>
+		<option value="0"> JNO </option>
+	</field>
+
+	<field 
+		name="language" 
+		type="contentlanguage" 
+		label="JFIELD_LANGUAGE_LABEL"
+		class="input-medium"
+	>
+		<option value="*">JALL</option>
+	</field>
+
+	<field 
+		name="description" 
+		type="textarea" 
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_DESCRIPTION"
+		rows="5" cols="50"
+	/>
+
+	<field 
+		name="values" 
+		type="textarea" 
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_VALUES"
+		rows="5" 
+		cols="50"
+	/>
+
+	<field 
+		name="default_values" 
+		type="textarea"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_DEFAULT_VALUES"
+		rows="5" 
+		cols="50" />
+
+	<field
+		name="rows"
+		type="text"
+		size="10"
+		maxlength="250"
+		default="3"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_ROWS" />
+
+	<field
+		name="cols"
+		type="text"
+		size="10"
+		maxlength="250"
+		default="20"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_COLS" />
+
+	<field
+		name="size"
+		type="text"
+		size="10"
+		maxlength="250"
+		default="25"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_SIZE" />
+
+	<field
+		name="css_class"
+		type="text"
+		size="20"
+		maxlength="250"
+		default="inputbox"
+		class="inputbox"
+		label="COM_JUX_REAL_ESTATE_CSS_CLASS" />
+    </fieldset>
+</form>

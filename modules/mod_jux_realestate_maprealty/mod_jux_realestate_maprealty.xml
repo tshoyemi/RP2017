@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+    <name>Jux Real Estate Map realty</name>
+    <creationDate>Sep 25 ,2015</creationDate>
+    <author>longnb</author>
+    <version>1.0.1</version>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <description>Map realty, Joomla 3.x Module</description>
+
+    <files>
+        <folder>assets</folder>
+        <folder>elements</folder>
+        <folder>xml</folder>
+        <folder>tmpl</folder>
+        <filename>mod_jux_realestate_maprealty.xml</filename>
+        <filename module="mod_jux_realestate_maprealty">mod_jux_realestate_maprealty.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+    </files>
+
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_jux_realestate_maprealty/elements">
+            <fieldset name="basic"> 
+                <field
+                    name="zoom_level"
+                    type="text"
+                    label="Map zoom"
+                    description="Enter zoom level for Map"
+                    default="12" /> 
+                <field
+                    name="map_height"
+                    type="text"
+                    label="Map Height"
+                    description="Enter height for Map"
+                    default="300"/> 
+
+                <field 
+                    name="enable_iconbar" 
+                    type="radio" 
+                    size="1" 
+                    default="1"  
+                    class="btn-group"
+                    label="Enable Icon Bar"
+                    description="MOD_JUX_REAL_ESTATE_MAP_ENABLE_ICON_BAR"
+                    >
+                    <option value="0" sub_fields="">JNO</option>
+                    <option value="1" sub_fields="enable_iconbar">JYES</option>
+                </field>
+
+                <field 
+                    class="btn-group" 
+                    name="scrollwheel" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REAL_ESTATE_MAP_SHOW_MAP_MOUSE_SCROL" 
+                    description="MOD_JUX_REAL_ESTATE_MAP_SHOW_MAP_MOUSE_SCROL_DESC"
+                    >
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field 
+                    class="btn-group" 
+                    name="userlocation" 
+                    type="radio" 
+                    default="1" 
+                    label="MOD_JUX_REAL_ESTATE_MAP_MY_LOCATION" 
+                    description="MOD_JUX_REAL_ESTATE_MAP_MY_LOCATION"
+                    >
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field 
+                    name="location" 
+                    type="location" 
+                    default="0" 
+                    label="MOD_JUX_REAL_ESTATE_MAP_DEFAULT_LOCALTION" 
+                    description="MOD_JUX_REAL_ESTATE_MAP_DEFAULT_LOCALTION" />
+            </fieldset>
+            <fieldset name="DATA_SOURCE">                          
+                <field 
+                    name="type_id" 
+                    type="type" 
+                    class="inputbox" 
+                    size="1" 
+                    label="MOD_JUX_REAL_ESTATE_MAP_SELECT_TYPE" 
+                    description="MOD_JUX_REAL_ESTATE_MAP_SELECT_TYPE_DESC" 
+                    multiple="true" />
+            </fieldset>   
+        </fields>
+    </config>
+    <languages>
+        <language tag="en-GB">en-GB.mod_jux_realestate_maprealty.ini</language>
+        <language tag="en-GB">en-GB.mod_jux_realestate_maprealty.sys.ini</language>
+    </languages>
+</extension>

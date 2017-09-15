@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item img{
+		height: 440px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3{
+		padding: 40px 0px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 a{
+		font-size: 28px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 small{
+		font-size: 20px;
+	}
+	.jux-property-slide-wrap.jux-slider .slider-control{
+		padding: 17px;
+	}	
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item img{
+		height: 345px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3{
+		padding: 40px 0px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 a{
+		font-size: 23px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 small{
+		font-size: 17px;
+	}
+	.jux-property-slide-wrap.jux-slider .slider-control{
+		padding: 13px;
+	}	
+}
+
+@media screen and (min-width: 480px) and (max-width: 567px) {
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item img{
+		height: 300px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3{
+		padding: 40px 0px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 a{
+		font-size: 16px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 small{
+		font-size: 14px;
+	}
+	.jux-property-slide-wrap.jux-slider .slider-control{
+		padding: 10px;
+	}
+
+	
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item img{
+		height: 200px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 a {
+		font-size: 15px;
+	}
+	.jux-slider .caroufredsel_wrapper .sliders .slide-item.jux-property-slide .slide-caption .slide-caption-info h3 small {
+		font-size: 9px;
+	}
+}

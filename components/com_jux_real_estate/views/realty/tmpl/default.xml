@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_JUX_REAL_ESTATE_PROPERTY_DETAIL">
+		<message>
+			<![CDATA[Property Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>COM_JUX_REAL_ESTATE_PROPERTY_DETAIL</name>
+		<description>COM_JUX_REAL_ESTATE_PROPERTY_DETAIL</description>
+		<url>
+
+		</url>
+	</state>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_jux_real_estate/elements">
+			<field 
+				name="id" 
+				type="juxrealty"
+				default="0"
+				label="COM_JUX_REAL_ESTATE_PROPERTY_DETAIL_SELECT_A_REALTY" 
+				description="COM_JUX_REAL_ESTATE_PROPERTY_DETAIL_SELECT_A_REALTY" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+	</fields>
+</metadata>

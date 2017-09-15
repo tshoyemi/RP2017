@@ -1,0 +1,639 @@
+.realty-item-details .realty-title {
+  margin-bottom: 35px;
+}
+.realty-item-details .realty-title .title {
+  font-size: 26px;
+}
+.realty-item-details .realty-title .address {
+  font-size: 15px;
+  font-weight: 300;
+}
+.realty-item-details .realty-social {
+  float: right;
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .realty-item-details .realty-social {
+    margin-bottom: 20px;
+  }
+}
+.realty-item-details .realty-social a {
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  float: left;
+  border-radius: 50%;
+  background-color: #f0e797;
+  color: #c1b547;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 5px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.realty-item-details .realty-social a:hover {
+  color: #fff;
+  background-color: #2D71B5;
+}
+.realty-item-details .realty-images-slider:hover .callbacks_nav {
+  opacity: 0.3;
+}
+.realty-item-details .realty-images-slider .callbacks_nav {
+  height: 80px;
+  width: 35px;
+  margin-top: -30px;
+  background-size: 65px 80px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.realty-item-details .realty-images-slider .callbacks_nav:hover {
+  opacity: 0.7;
+}
+.realty-item-details .realty-images-slider .callbacks_nav.prev {
+  left: 15px;
+}
+.realty-item-details .realty-images-slider .callbacks_nav.next {
+  right: 15px;
+}
+.realty-item-details .realty-summary {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.realty-item-details .realty-summary .property-detail {
+  padding: 15px;
+  background: #F6F6F6;
+  border: 1px solid #e5e5e5;
+  margin: 0 30px 15px 15px;
+}
+.realty-item-details .realty-summary .property-detail .property-detail-title {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.realty-item-details .realty-summary .property-detail .detail-field {
+  font-size: 14px;
+}
+.realty-item-details .realty-summary .property-detail .detail-field span {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.realty-item-details .realty-summary .property-detail .detail-field .detail-field-label {
+  font-weight: bold;
+  text-align: right;
+  clear: both;
+}
+.realty-item-details .realty-summary .property-desc .property-detail-title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+.realty-item-details .realty-summary .property-content {
+  padding: 0 15px 0 0;
+  margin-left: 15px;
+}
+.realty-item-details .realty-summary h2 {
+  padding-bottom: 10px;
+}
+.realty-item-details .realty-description {
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.realty-item-details .realty-description h2 {
+  padding-bottom: 10px;
+}
+.realty-item-details .realty-featured {
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.realty-item-details .realty-featured h2 {
+  padding-bottom: 10px;
+}
+.realty-item-details .realty-featured .amen-category .title {
+  font-size: 16px;
+  font-weight: 300;
+}
+.realty-item-details .realty-featured .amen-category .amen-featured-list {
+  margin-left: 15px;
+}
+@media screen and (max-width: 479px) {
+  .realty-item-details .realty-featured .amen-category .amen-featured-list {
+    margin-left: 0px;
+  }
+}
+.realty-item-details .realty-featured .amen-category .amen-featured-list .amen-item {
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.realty-item-details .realty-featured .amen-category .amen-featured-list .amen-item i {
+  padding-right: 5px;
+  color: #0088cc;
+}
+.realty-item-details .realty-video {
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.realty-item-details .realty-video h2 {
+  padding-bottom: 10px;
+}
+.realty-item-details .realty-video iframe {
+  height: 450px;
+}
+@media screen and (max-width: 768px) {
+  .realty-item-details .realty-video iframe {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .realty-item-details .realty-video iframe {
+    height: 200px;
+  }
+}
+.realty-item-details .realty-map {
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.realty-item-details .realty-map h2 {
+  padding-bottom: 10px;
+}
+.realty-item-details .realty-map .map-direction #mode {
+  height: 38px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 480px) and (max-width: 499px) {
+  .realty-item-details .realty-map .map-direction #mode {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .realty-item-details .realty-map .map-direction #mode {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.realty-item-details .realty-map .map-direction .btn-default {
+  text-shadow: none;
+  font-size: 13px;
+  background: #f0e797;
+  border: 0;
+  font-weight: 300;
+  color: #c1b547;
+  padding: 10px 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.realty-item-details .realty-map .map-direction .btn-default:hover,
+.realty-item-details .realty-map .map-direction .btn-default:focus {
+  background: #0088CC;
+  color: #fff;
+}
+@media screen and (max-width: 479px) {
+  .realty-item-details .realty-map .map-direction .btn-default {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.realty-item-details .realty-map .map-gg {
+  position: relative;
+  border: 1px;
+  width: 70%;
+  height: 400px;
+  margin: 10px 0;
+}
+.realty-item-details .realty-map .map-gg #map_canvas {
+  position: absolute;
+  width: 143%;
+  height: 400px;
+  z-index: 2;
+}
+.realty-item-details .realty-map .map-gg #directionsPanel {
+  position: absolute;
+  left: 100%;
+  width: 43%;
+  height: 400px;
+  overflow: auto;
+}
+.realty-item-details .realty-map .map-gg #directionsPanel .adp {
+  margin-top: -10px;
+}
+.agent-property {
+  margin-bottom: 40px;
+}
+.agent-property .agent-profile .agent-property-title {
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.agent-property .agent-profile .agent-property-title h2 {
+  padding-bottom: 10px;
+}
+.agent-property .agent-profile .agents.grid {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 479px) {
+  .agent-property .agent-profile .agents.grid .left-content .agent-info {
+    display: table;
+    margin-bottom: 106px;
+  }
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .leftcontent {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .leftcontent .agent-image img {
+  width: 100%;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent {
+  position: relative;
+  padding-left: 20px;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-info {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-info i {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 1280px) {
+  .agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-info i {
+    float: none;
+  }
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 1px solid #ececec;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0 10px 40px;
+  list-style: none;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+@media screen and (max-width: 991px) {
+  .agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social {
+    padding-left: 16px;
+    border-bottom: 0px solid #ececec;
+  }
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li {
+  float: left;
+  margin-right: 5px;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a {
+  display: block;
+  background: #eee;
+  color: #a5a5a5;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-social li a:hover {
+  background-color: #2D71B5;
+  color: #fff;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #c1b547;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  border: 0 none;
+  white-space: nowrap;
+  padding: 10px 12px;
+  margin-bottom: 0;
+  background-color: #f0e797;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.agent-property .agent-profile .agents.grid .left-content .agent-info .rightcontent .agent-wrap .agent-summary .agent-desc .agent-action a:hover {
+  background-color: #2D71B5;
+  color: #fff;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform {
+  width: 100%;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group {
+  margin-bottom: 10px;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group .form-control {
+  width: 100%;
+  color: #555;
+  background: #fff;
+  font-size: 16px;
+  line-height: normal;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px;
+  border: 1px solid #dedede;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group .form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px #0088cc;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group input {
+  width: 20%;
+  margin-right: 10px;
+  height: 37px;
+}
+@media screen and (max-width: 480px) {
+  .agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group input {
+    width: 40%;
+  }
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group input #jform_captcha {
+  margin-top: 8px !important;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-group textarea {
+  height: 80px;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action img {
+  height: 35px;
+  margin-bottom: 8px;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action i.jux-fa.jux-fa-refresh {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action button {
+  font-size: 16px;
+  background: #f0e797;
+  border: 0;
+  font-weight: 300;
+  color: #c1b547;
+  padding: 10px 20px;
+  float: right;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 45%;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action button {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action button {
+    width: 100%;
+  }
+}
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action button:hover,
+.agent-property .agent-profile .agents.grid .right-content .contact-agent #conactagentform .form-action button:focus {
+  background: #0088CC;
+  color: #fff;
+}
+.agent-property .agent-more-properties .more-properties-items .owl-wrapper-outer {
+  left: 0px;
+}
+.agent-property .agent-more-properties .more-properties-items .owl-controls {
+  position: absolute;
+  top: -12px;
+  right: 0px;
+  text-align: center;
+  margin-top: -33px;
+}
+.agent-property .agent-more-properties .more-properties-items .owl-controls .owl-buttons div {
+  padding: 8px 12px 8px 12px;
+}
+.agent-property .agent-more-properties .more-properties-items .owl-item .real_slider.imagein {
+  position: relative;
+  margin: 0px 5px;
+}
+.agent-property .agent-more-properties .more-properties-items .owl-item .real_slider.imagein:hover .overlay,
+.agent-property .agent-more-properties .more-properties-items .owl-item .real_slider.imagein:hover .real_slider.imagein:hover .additional_info {
+  bottom: 0px;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.75)), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.75), #000000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), #000000 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: table;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail > div,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail > div {
+  width: 33.33%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px 4px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail > div span,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail > div span {
+  display: inline-block;
+  padding-left: 32px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail > div.size span,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail > div.size span {
+  background: url("../images/icon/size-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail > div.bedrooms span,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail > div.bedrooms span {
+  background: url("../images/icon/bedroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .property-detail > div.bathrooms span,
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein:hover .additional_info .property-detail > div.bathrooms span {
+  background: url("../images/icon/bathroom-icon.png") no-repeat scroll 0 center transparent;
+  padding: 10px 5px 10px 30px;
+  background-size: 25px 20px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein {
+  height: auto;
+  font-size: 13px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .tag.status {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  color: #fff;
+  left: 13px;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  z-index: 2;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .tag.status:after {
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 0;
+  border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+  content: "";
+  left: 0;
+  position: absolute;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .tag.status .type {
+  padding: 6px 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .tag.status .new {
+  float: left;
+  padding: 6px 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 10px;
+  color: #FFFD00;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .banners .bannerright {
+  position: absolute;
+  bottom: inherit;
+  right: 0;
+  z-index: 1;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .banners .bannerleft {
+  position: absolute;
+  bottom: inherit;
+  left: 0;
+  z-index: 1;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .real_image {
+  height: 100%;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .real_image img {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay {
+  font-size: 13px;
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des {
+  padding: 5px 10px 15px 10px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des h3 a {
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des h3 a:hover {
+  color: #2D71B5;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des .real_price {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #1396e2;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des .real_price .slashprice {
+  font-size: 11px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des figure {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+.agent-property .agent-more-properties .more-properties-items .real_slider.imagein .overlay .real_des header {
+  float: left;
+  color: red;
+}
